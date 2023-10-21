@@ -1,8 +1,8 @@
 process:
-	python3 ./process.py
+	./env/bin/python3 ./process.py
 
 download:
-	python3 ./download.py
+	./env/bin/python3 ./download.py
 
 env:
 	python -m venv ./env || true
