@@ -1,32 +1,33 @@
+"""Compiles the metadata and template into a static HTML file"""
 import os
 import bios
 from jinja2 import Environment, FileSystemLoader
 
 # define the output directory
-output_directory = "./public"
+PUBLIC_DIRECTORY = "./public"
 
 # Read data from the JSON file using the 'bios' module
-events = bios.read('events_list.json')
+events = bios.read("events_list.json")
 
 # Create a Jinja2 environment with the templates directory
-env = Environment(loader=FileSystemLoader('templates'))
+env = Environment(loader=FileSystemLoader("templates"))
 
 # Load the template
-template = env.get_template('index.html')
+template = env.get_template("index.html")
 
 # Render the template with the 'events' variable
 rendered_template = template.render(events=events)
 
 # Check if the directory exists
-if not os.path.exists(output_directory):
+if not os.path.exists(PUBLIC_DIRECTORY):
     # If it doesn't exist, create the directory
-    os.makedirs(output_directory)
-    print(f"Directory '{output_directory}' created.")
+    os.makedirs(PUBLIC_DIRECTORY)
+    print(f"Directory '{PUBLIC_DIRECTORY}' created.")
 else:
-    print(f"Directory '{output_directory}' already exists.")
+    print(f"Directory '{PUBLIC_DIRECTORY}' already exists.")
 
 # Save the rendered template as an HTML file
-with open('public/index.html', 'w') as html_file:
+with open(f"{PUBLIC_DIRECTORY}/index.html", "w", encoding="utf-8") as html_file:
     html_file.write(rendered_template)
 
-print('Template populated with events data and saved as index.html')
+print(f"Template populated with events data and saved as {PUBLIC_DIRECTORY}/index.html")

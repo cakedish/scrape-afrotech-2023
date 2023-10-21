@@ -1,15 +1,16 @@
-# Define a mapping of access types to groups:
-# - Students
-# - Speakers
-# - All Access
-# - Corporate
-# - Sponsors
-# - Executive
-# - RSVP
-# - GA
-# - Press
-# - Add-On
-
+"""
+Map access types to groups:
+- Students
+- Speakers
+- All Access
+- Corporate
+- Sponsors
+- Executive
+- RSVP
+- GA
+- Press
+- Add-On
+"""
 access_type_mapping = {
     "Students": "Students",
     "Student": "Students",
@@ -30,8 +31,9 @@ access_type_mapping = {
     "GA": "General Admission",
     "Press": "Press",
     "Sponsors": "Sponsors",
-    "Add-On for all Others": "Add-On"
+    "Add-On for all Others": "Add-On",
 }
+
 
 def this(access_types: list[str]) -> list[str]:
     """Convert a list of access types to a list of groups."""
@@ -54,14 +56,20 @@ if __name__ == "__main__":
     event_data = [
         {"access": ["Students", "Student"]},
         {"access": ["Speakers", "Speakers & All Access Registration"]},
-        {"access": ["All Access Badge Holders", "All Access", "All Access Ticket Holders"]},
+        {
+            "access": [
+                "All Access Badge Holders",
+                "All Access",
+                "All Access Ticket Holders",
+            ]
+        },
         {"access": ["Corporate", "Corporate Sponsors"]},
         {"access": ["Executive", "Exec"]},
         {"access": ["RSVP Only", "Invite Only", "RSVP Required", "RSVP Requirfed"]},
         {"access": ["GA"]},
         {"access": ["Press"]},
         {"access": ["Sponsors"]},
-        {"access": ["Add-On for all Others"]}
+        {"access": ["Add-On for all Others"]},
     ]
 
     # Iterate through the list of event objects and organize access types into groups

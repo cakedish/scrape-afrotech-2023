@@ -4,16 +4,10 @@ process:
 download:
 	./env/bin/python3 ./download.py
 
-static: activate
+static:
 	./env/bin/python3 ./create_static_site.py
 
-env:
-	python -m venv ./env || true
-
-activate:
-	. ./env/bin/activate
-
-crunk: setup requirements check
+crunk: setup env requirements check
 	@echo 
 	@echo "Get crunk with it. Get loose with it."
 	@echo
@@ -25,25 +19,32 @@ setup:
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O google-chrome-stable_current_amd64.deb
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+env:
+	python3 -m venv ./env
+
 requirements:
-	./env/bin/pip install --quiet --upgrade pip
+	@rm -rf ~/.cache/pip/selfcheck/
+	./env/bin/pip install --quiet flake8 pylint black
 	./env/bin/pip install --quiet --requirement requirements.txt
 
 check:
 	which git && git --version
-	which python3 && python3 --version
-	which pip && pip --version
 	which node && node --version
 	which npm && npm --version
 	which npx && npx --version
 	which google-chrome && google-chrome --version
-	which flask && flask --version
+	./env/bin/python3 --version
+	./env/bin/pip --version
+	./env/bin/flask --version
+	./env/bin/black --version
 
-lint: activate
-	flake8 --exit-zero --ignore=E128,E501  *.py
-	pylint --exit-zero *.py
+lint:
+	./env/bin/black --check *.py
+	./env/bin/flake8 --ignore=E501  *.py
+	./env/bin/pylint *.py
 
 clean:
+	rm -f google-chrome-stable_current_amd64.deb
 	rm -rvf ./downloads
 
 nuke: clean
@@ -51,11 +52,8 @@ nuke: clean
 	rm -rvf ./public
 
 debug: activate
-	flask run --host 0.0.0.0 --port 3000 --debug
+	./env/bin/flask run --host 0.0.0.0 --port 3000 --debug
 
-freeze: activate
-	flask freeze
+all: env requirements check lint download process static
 
-all: env requirements activate download process
-
-.PHONY: all process download env activate requirements lint clean freeze
+.PHONY: all process download env requirements lint clean static

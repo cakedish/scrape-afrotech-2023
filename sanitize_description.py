@@ -1,44 +1,40 @@
-import re
+"""Clean up the descriptions"""
 import html
 
-def this(description: str, event_id = 0) -> str:
-    """Sanitize the description for an event"""
 
+def this(description: str) -> str:
+    """Sanitize the description for an event"""
     # Escape HTML entities
     escaped_description = html.escape(description)
-    sanitized_description = f'{escaped_description}'
-    
+    sanitized_description = f"{escaped_description}"
+
     return sanitized_description
-
-
 
 
 # Test the function
 if __name__ == "__main__":
+    TEST_DESCRIPTION = "<script>alert('Hello World');</script>"
+    print(f"Before sanitization: {TEST_DESCRIPTION}")
+    print(f"After sanitization: {TEST_DESCRIPTION}")
 
-    description = "<script>alert('Hello World');</script>"
-    print("Before sanitization: {0}".format(description))
-    print("After sanitization: {0}".format(this(description)))
-
-    description = "<p>Here is a paragraph</p>"
-    print("Before sanitization: {0}".format(description))
-    print("After sanitization: {0}".format(this(description)))
+    TEST_DESCRIPTION = "<p>Here is a paragraph</p>"
+    print(f"Before sanitization: {TEST_DESCRIPTION}")
+    print(f"After sanitization: {TEST_DESCRIPTION}")
 
     # Create a test case with a description that contains a single quote
-    description = "<p>Here's a paragraph</p>"
-    print("Before sanitization: {0}".format(description))
-    print("After sanitization: {0}".format(this(description)))
+    TEST_DESCRIPTION = "<p>Here's a paragraph</p>"
+    print(f"Before sanitization: {TEST_DESCRIPTION}")
+    print(f"After sanitization: {TEST_DESCRIPTION}")
 
     # Create a test case with a multi-line description
-    description = """Experience an evening of inspiration and networking 
-            while celebrating the achievements of remarkable leaders at the 
-            Women of Influence Reception, Presented by Viarae.  
+    TEST_DESCRIPTION = """Experience an evening of inspiration and networking
+            while celebrating the achievements of remarkable leaders at the
+            Women of Influence Reception, Presented by Viarae.
             This event is Invite Only."""
-    print("Before sanitization: {0}".format(description))
-    print("After sanitization: {0}".format(this(description)))
+    print(f"Before sanitization: {TEST_DESCRIPTION}")
+    print(f"After sanitization: {TEST_DESCRIPTION}")
 
-
-    description = """
+    TEST_DESCRIPTION = """
     Brunch your way through Austin, celebrating and supporting the city's diverse and delicious brunch culture before departing from an amazing AFROTECH™ week. See below for locations and some special offerings:
 
     Anthem
@@ -51,5 +47,5 @@ if __name__ == "__main__":
     Distance: 0.4 miles | 10 mins walk
     Special: Agreed to provide a 10% discount (excluding alcohol) to attendees who show AfroTech badge.
     """
-    print("Before sanitization: {0}".format(description))
-    print("After sanitization: {0}".format(this(description)))
+    print(f"Before sanitization: {TEST_DESCRIPTION}")
+    print(f"After sanitization: {TEST_DESCRIPTION}")
