@@ -53,6 +53,6 @@ debug: activate
 freeze: activate
 	flask freeze
 
-all: download process
+all: requirements activate download process
 
 .PHONY: all process download env activate requirements lint clean freeze
