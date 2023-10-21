@@ -4,3 +4,4 @@ Flask
 requests
 selenium
 Jinja2
+webdriver-manager

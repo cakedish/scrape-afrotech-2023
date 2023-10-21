@@ -4,6 +4,9 @@ process:
 download:
 	./env/bin/python3 ./download.py
 
+static: activate
+	./env/bin/python3 ./create_static_site.py
+
 env:
 	python -m venv ./env || true
 
