@@ -85,7 +85,7 @@
                             title: '{{ event.title }}',
                             start: '{{ event.start }}',
                             end: '{{ event.end }}',
-                            access: '{{ event.access }}',
+                            access: `{{ event.access }}`,
                             extendedProps: {
                                 description: `{{ event.description }}`,
                                 date: `{{ event.date }}`,
@@ -94,7 +94,7 @@
                                     image: '{{ event.image }}',
                                 {% endif %}                                 
                                 {% if event.link %}
-                                    link: '{{ event.link }}',
+                                    link: `{{ event.link }}`,
                                 {% endif %}                                
                             },
                             {% if "General Admission" in event.access %}
