@@ -160,4 +160,6 @@ cython_debug/
 #.idea/
 events_dict.json
 events_list.json
-google-chrome-stable_current_amd64.deb
+*.deb
+*.zip
+*.swp

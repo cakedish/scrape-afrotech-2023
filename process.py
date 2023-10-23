@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import convert_to_iso8601
 import cleanup_access_types
 import sanitize_description
+import determine_lowest_access
 
 
 # Directory where HTML files are stored
@@ -80,6 +81,7 @@ for filename in os.listdir(HTML_DIRECTORY):
                         value = value.split(",")
                         value = [v.strip() for v in value]
                         value = cleanup_access_types.this(value)
+
                     else:
                         value = value.replace("\n", " ").strip()
 
@@ -101,6 +103,10 @@ for filename in os.listdir(HTML_DIRECTORY):
                     value = metadata_element.find("img")["src"].strip()
 
                 metadata_dict[KEY.lower()] = value
+
+            # get the access level
+            if "access" in metadata_dict:
+                metadata_dict["access_id"] = determine_lowest_access.this(metadata_dict["access"])
 
             # convert the date and time keys to ISO 8601 format
             metadata_dict["start"], metadata_dict["end"] = convert_to_iso8601.this(

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{ title }}</title>
+        <title>A Very Unofficial Afrotech Calendar</title>
         <style>
             #event-details-panel {
                 background-color: #fff;
@@ -18,9 +18,25 @@
     
     </head>
     <body>
+        <!-- TODO: filter calendar by access type -->
+        <select id="selector">
+            <option value="all">Show all events</option>
+            <option value="1">General Admission (Work in Progress)</option>
+            <option value="2">Students (Work in Progress)</option>
+            <option value="3">Executive (Work in Progress)</option>
+            <option value="4">All Access (Work in Progress)</option>
+            <option value="5">Speakers (Work in Progress)</option>
+            <option value="6">Corporate (Work in Progress)</option>
+            <option value="7">Sponsors (Work in Progress)</option>
+            <option value="8">Press (Work in Progress)</option>
+            <option value="9">RSVP Required (Work in Progress)</option>
+            <option value="10">Add-On (Work in Progress)</option>
+        </select>
+        <p></p>
         <div id="calendar"></div>
-        
+        <div id="event-details-panel" style="display: none;"><p></p></div>
         <script>
+            let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
@@ -78,7 +94,14 @@
 
                     // You can style the panel with CSS to make it look as desired
                     },
-                    events: [
+                    eventDidMount: function(arg) {
+                        let val = selector.value;
+                        if (!(val == arg.event.extendedProps.access_id || val == "all")) {
+                            arg.el.style.display = "none";
+                        }
+                    },                    
+                    events: function (fetchInfo, successCallback, failureCallback) {
+                        successCallback([
                         {% for event in events %}
                         {
                             id: '{{ event.id }}',
@@ -110,18 +133,14 @@
                             {% endif %}
                         },
                         {% endfor %}
-                    ],
+                        ]);
+                    }
             });
 
             calendar.render();
+            selector.addEventListener('change', function() {
+                calendar.refetchEvents();
+            });
         </script>
-        <!-- TODO: filter calendar by access type -->
-        <select id="selector">
-            <option value="all">All</option>
-            <option value="1">Marc</option>
-            <option value="2">Tom</option>
-            <option value="3">David</option>
-          </select>
-        <div id="event-details-panel" style="display: none;"></div>
     </body>
 </html>

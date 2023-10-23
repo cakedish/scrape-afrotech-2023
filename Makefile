@@ -44,6 +44,7 @@ lint:
 	./env/bin/pylint *.py
 
 clean:
+	rm -f *.swp
 	rm -f google-chrome-stable_current_amd64.deb
 	rm -rvf ./downloads
 
@@ -51,7 +52,7 @@ nuke: clean
 	rm -rvf ./env
 	rm -rvf ./public
 
-debug: activate
+debug:
 	./env/bin/flask run --host 0.0.0.0 --port 3000 --debug
 
 all: env requirements check lint download process static
