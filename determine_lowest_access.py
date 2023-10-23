@@ -14,7 +14,7 @@ access_type_levels = {
     "Sponsors": 7,
     "Press": 8,
     "RSVP Required": 9,
-    "Add-On": 10
+    "Add-On": 10,
 }
 
 
@@ -23,7 +23,7 @@ def this(access_types):
     Determine the lowest access type value from a list of access types
     """
     # Initialize the lowest value with a large number
-    low = float('inf')
+    low = float("inf")
 
     # Iterate through the access types and find the lowest value
     for access_type in access_types:
@@ -33,13 +33,14 @@ def this(access_types):
 
     return low
 
-# Example usage:
-access_types_list = ["Students", "Executive", "Speakers"]
-lowest_value = this(access_types_list)
-print("Lowest Value:", lowest_value)
 
 # Test the function
 if __name__ == "__main__":
+    # Example usage:
+    access_types_list = ["Students", "Executive", "Speakers"]
+    lowest_value = this(access_types_list)
+    print("Lowest Value:", lowest_value)
+
     event_data = [
         {"access": ["Students", "Student"]},
         {"access": ["Speakers", "Speakers & All Access Registration"]},

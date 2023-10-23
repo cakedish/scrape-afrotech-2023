@@ -43,8 +43,11 @@ lint:
 	./env/bin/flake8 --ignore=E501  *.py
 	./env/bin/pylint *.py
 
+black:
+	black *.py
+
 clean:
-	rm -f *.swp
+	rm -f .*.swp
 	rm -f google-chrome-stable_current_amd64.deb
 	rm -rvf ./downloads
 

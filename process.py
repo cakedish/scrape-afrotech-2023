@@ -106,7 +106,9 @@ for filename in os.listdir(HTML_DIRECTORY):
 
             # get the access level
             if "access" in metadata_dict:
-                metadata_dict["access_id"] = determine_lowest_access.this(metadata_dict["access"])
+                metadata_dict["access_id"] = determine_lowest_access.this(
+                    metadata_dict["access"]
+                )
 
             # convert the date and time keys to ISO 8601 format
             metadata_dict["start"], metadata_dict["end"] = convert_to_iso8601.this(
