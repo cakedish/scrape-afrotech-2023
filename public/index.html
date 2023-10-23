@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ5WQDMB66"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());        
+          gtag('config', 'G-PJ5WQDMB66');
+        </script>        
+        <title>A Very Unofficial Afrotech Calendar</title>
         <style>
             #event-details-panel {
                 background-color: #fff;
@@ -18,9 +26,25 @@
     
     </head>
     <body>
+        <!-- TODO: filter calendar by access type -->
+        <select id="selector">
+            <option value="all">Show all events</option>
+            <option value="1">General Admission (Work in Progress)</option>
+            <option value="2">Students (Work in Progress)</option>
+            <option value="3">Executive (Work in Progress)</option>
+            <option value="4">All Access (Work in Progress)</option>
+            <option value="5">Speakers (Work in Progress)</option>
+            <option value="6">Corporate (Work in Progress)</option>
+            <option value="7">Sponsors (Work in Progress)</option>
+            <option value="8">Press (Work in Progress)</option>
+            <option value="9">RSVP Required (Work in Progress)</option>
+            <option value="10">Add-On (Work in Progress)</option>
+        </select>
+        <p></p>
         <div id="calendar"></div>
-        
+        <div id="event-details-panel" style="display: none;"><p></p></div>
         <script>
+            let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
@@ -78,14 +102,21 @@
 
                     // You can style the panel with CSS to make it look as desired
                     },
-                    events: [
+                    eventDidMount: function(arg) {
+                        let val = selector.value;
+                        if (!(val == arg.event.extendedProps.access_id || val == "all")) {
+                            arg.el.style.display = "none";
+                        }
+                    },                    
+                    events: function (fetchInfo, successCallback, failureCallback) {
+                        successCallback([
                         
                         {
                             id: '2561350',
                             title: 'Movies &amp; Mimosas Presented By kweliTV',
                             start: '2023-11-02T12:00:00',
                             end: '2023-11-02T13:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: The BillScreen: Odessa’s Reign Screen: The Untold Story of Mild Sauce Screen: Little April`,
                                 date: `2023-11-02`,
@@ -123,7 +154,7 @@
                             title: 'All Attendee Opening Session',
                             start: '2023-11-01T16:00:00',
                             end: '2023-11-01T19:00:00',
-                            access: `['Students', 'General Admission']`,
+                            access: `['General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us as we kick off our conference festivities and set the tone for the week with an exciting opening ceremony
 
@@ -163,7 +194,7 @@ Doors open at 3:30pm.`,
                             title: 'Doing More with Less: Optimizing Image Quality &amp; Stereo Depth at the Edge',
                             start: '2023-11-02T14:00:00',
                             end: '2023-11-02T14:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for an engaging and informative session where we delve into the fascinating world of Computer Vision and Machine Learning (CVML) and explore how these cutting-edge technologies are enabling us to achieve remarkable feats with minimal resources.Tarik LoukiliStaff Robotics Engineer - John Deere`,
                                 date: `2023-11-02`,
@@ -199,7 +230,7 @@ Doors open at 3:30pm.`,
                             title: 'The Entrepreneur’s Journey: From Startup to Acquisition | Presented by AMEX',
                             start: '2023-11-03T11:00:00',
                             end: '2023-11-03T11:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `From the innate drive to succeed against all odds to the struggle to maintain your identity in a homogeneous environment, the journey of a startup company on its path to acquisition (and beyond) is very familiar to most black technology professionals. Understanding the synergy between these two experiences and the lessons learned from industry pioneers who have navigated both journeys can provide a competitive advantage for any black tech innovator looking to succeed in the world of startups, venture capital, or mergers and acquisitions. Senior executives from American Express with personal experiences in all phases of the journey from the startup and VC ecosystem to a large corporate enterprise will share their stories, best practices, and actionable steps to success.`,
                                 date: `2023-11-03`,
@@ -219,7 +250,7 @@ Doors open at 3:30pm.`,
                             title: 'SPILLing the Tea: Centering Culture Creators with Co-Founder Phonz',
                             start: '2023-11-02T15:15:00',
                             end: '2023-11-02T16:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Alphonzo TerrellChief Executive Officer &amp; Co-Founder - SpillMaya WatsonCo-founder &amp; Chief Executive Officer - ManualJeffery WallacePresident &amp; Chief Executive Officer - LeadersUp`,
                                 date: `2023-11-02`,
@@ -237,7 +268,7 @@ Doors open at 3:30pm.`,
                             title: 'Movies &amp; Mimosas Presented By kweliTV: Flight',
                             start: '2023-11-02T11:00:00',
                             end: '2023-11-02T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: Flight Fireside Chat: Filmmaking with Purpose (w/ Flight co-director and writer)Kia MosesScreenwriter / Director / Ideator -`,
                                 date: `2023-11-02`,
@@ -397,7 +428,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Redefining Your Career in the New World of Work | Presented by LinkedIn',
                             start: '2023-11-02T11:30:00',
                             end: '2023-11-02T12:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `As the world’s largest professional network, at our core our mission is to connect our members to economic opportunity. In the age of having a “skills first mindset” and generative AI, having a strategic approach to your career is critical. Skills needed for most jobs have already changed 25% since 2015, and by 2030, it&#x27;s set to skyrocket to 65%, all thanks to new technologies like AI. Come to this session to learn how to thrive in the new world of work.`,
                                 date: `2023-11-02`,
@@ -419,7 +450,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             end: '2023-11-02T21:00:00',
                             access: `['RSVP Required']`,
                             extendedProps: {
-                                description: `Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!  The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.
+                                description: `Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.
 
 This is a great way to connect with folks during the conference, mix and mingle, and of course, make FRIENDS! Get ready for an electrifying block party, complete with NYC high-energy vibes right in the heart of Austin. Our DJ lineup is stacked with world-class talent. Playing the latest and greatest in tunes from Hip Hop, R&amp;B, AfroBeats, Dancehall and more!
 
@@ -529,7 +560,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'Tech4Impact: Driving Social Change',
                             start: '2023-11-03T12:00:00',
                             end: '2023-11-03T12:20:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Marques ZakDirector of Cultural Platforms - American ExpressJonathan KirklandHead of Marketing &amp; Brand - BLK (Match Group)`,
                                 date: `2023-11-03`,
@@ -547,7 +578,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'World Builders: The New Storytelling Frontier',
                             start: '2023-11-03T13:00:00',
                             end: '2023-11-03T13:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for a captivating session exploring how animation is revolutionizing storytelling. From mixed media to animated films, we&#x27;ll delve into innovative techniques and technologies that are reshaping narratives. Gain insights from industry experts and get inspired to incorporate animation into your creative projects. Don&#x27;t miss this opportunity to be part of the animation storytelling revolution!dream hamptonAward-Winning Filmmaker - Chaz BottomsDirector, Story Artist, Writer and Founder - CBA StudiosDawn RichardDirector Artist Relations / Creative And Cultural Producer - Hip Hop Caucus`,
                                 date: `2023-11-03`,
@@ -565,7 +596,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'Official AFROTECH™️ Music Protect the Culture',
                             start: '2023-11-03T21:00:00',
                             end: '2023-11-03T00:00:00',
-                            access: `['All Access', 'Add-On']`,
+                            access: `['Add-On', 'All Access']`,
                             extendedProps: {
                                 description: `Ignite the night with a fusion of Afrobeats and Dancehall in an electrifying showcase of musical talent. A movement, a celebration, and a vibe you won&#x27;t want to miss.
 
@@ -625,7 +656,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'Real Talk: Innovation, Patents, and Black Excellence | Presented by Bank of America',
                             start: '2023-11-02T09:00:00',
                             end: '2023-11-02T10:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `The session will be about technology innovation at Bank of America.`,
                                 date: `2023-11-02`,
@@ -645,7 +676,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'The Power of Relationships: How Relationships Can Transform your Business and Career | Presented by Shopify',
                             start: '2023-11-02T10:15:00',
                             end: '2023-11-02T11:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover the art of leveraging relationships for sustainable growth in both corporate and entrepreneurial landscapes. This learning session will offer valuable strategies for professionals navigating the corporate environment and entrepreneurs looking to forge strong customer and partner connections. Through real-world examples from our journey and Shopify’s, you’ll gain insight into the profound impact of relationships on business success.Deana ThorntonDirector of Product Marketing - ShopifyTito AlawodeCustomer Success Manager - Shopify`,
                                 date: `2023-11-02`,
@@ -683,7 +714,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'Are you Ready: Anatomy of a Cyber Attack',
                             start: '2023-11-03T13:30:00',
                             end: '2023-11-03T14:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `In this insightful session, we will delve into the intricate details of a cyber attack in today&#x27;s digital landscape. We&#x27;ll explore the various stages of a cyber attack, from initial reconnaissance to full-blown exploitation, highlighting the significant financial and reputational risks that individuals and organizations face. By the end of this session, attendees will gain a comprehensive understanding of cybercriminal tactics and walk away with practical tips on how to protect their digital assets, making cybersecurity a top priority in their lives.Octavia HowellChief Information Security Officer - Equifax Canada Co.Ireen BirungiChief Information Security Officer - Interac Corp.Claudette McGowanChief Executive Officer - Protexxa`,
                                 date: `2023-11-03`,
@@ -701,7 +732,7 @@ Don&#x27;t miss out on this event! Mark your calendars and join us at the Black 
                             title: 'Movies &amp; Mimosas Presented By kweliTV: Solace',
                             start: '2023-11-03T13:00:00',
                             end: '2023-11-03T15:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: SolaceFireside chat: Using the Power of Storytelling to Tackle Mental Illness in the Black CommunityTchaiko OmawaleFilm Director of Solace -`,
                                 date: `2023-11-03`,
@@ -876,7 +907,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'General Registration | Austin Convention Center',
                             start: '2023-11-01T10:00:00',
                             end: '2023-11-01T20:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access', 'Press']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Press', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-01`,
@@ -930,7 +961,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'State of AfroTech',
                             start: '2023-11-03T12:30:00',
                             end: '2023-11-03T13:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Jeff NelsonCo-Founder &amp; Chief Operating Officer - Blavity, Inc.Simone WhiteSenior Vice President, AfroTech and Talent Infusion - Blavity, Inc.`,
                                 date: `2023-11-03`,
@@ -948,7 +979,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Movies &amp; Mimosas Presented By kweliTV',
                             start: '2023-11-03T12:00:00',
                             end: '2023-11-03T13:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.   Screen: Upper Hand Screen: Happy Birthday, Marsha Screen: Emerger Screen: Blackness is Everything`,
                                 date: `2023-11-03`,
@@ -1006,7 +1037,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Innovation Toolkit: Set the Stage with Support, Space &amp; Structure | Presented by Capital One',
                             start: '2023-11-02T15:00:00',
                             end: '2023-11-02T16:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Each one of us has the potential and power to innovate in big ways, but innovation is not born in a vacuum. We have to build the right environment and muscle so that we’re equipped to innovate, allowing us to do our highest value work. This talk will review the three foundational elements to set the stage to innovate: Support, Space &amp; Structure - attendees will walk away with practical advice on how to create an environment ripe for innovation.`,
                                 date: `2023-11-02`,
@@ -1026,7 +1057,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'General Registration | Hilton',
                             start: '2023-11-01T10:00:00',
                             end: '2023-11-01T20:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-01`,
@@ -1090,7 +1121,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Growth Design: Engage &amp; Retain',
                             start: '2023-11-02T09:45:00',
                             end: '2023-11-02T10:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `This session explores effective strategies for designing digital products that enhance user engagement and retention. Attendees will discover the latest tools and techniques for user research, experimentation, and data analysis to inform design decisions. By the end of the session, participants will gain the knowledge needed to create user-loved products that drive business growth.Fonz MorrisLead Product Designer, Global Conversion &amp; Monetization - Netflix`,
                                 date: `2023-11-02`,
@@ -1146,7 +1177,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Navigating a Career in Emerging Technologies - Tips from Meta’s Metaverse Employees | Presented by Meta',
                             start: '2023-11-02T13:30:00',
                             end: '2023-11-02T14:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Navigating a career in new and emerging technology presents unique challenges. In this workshop, Meta employees working on building the future of connection will share how they advance their careers while navigating the ambiguity of building new products and platforms. Participants can expect to leave this workshop with tangible tips and tricks to apply to their own careers while also learning a bit more about the metaverse and how it’s being built.Stacey Houston, IISenior Product Lead - Product Equity, Metaverse - MetaNgozi OfocheReality Labs Trust Strategist - MetaAngelique WallerProduct Manager, AR Devices - Meta`,
                                 date: `2023-11-02`,
@@ -1186,7 +1217,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Official AFROTECH™ Music After Hours',
                             start: '2023-11-04T21:00:00',
                             end: '2023-11-04T00:00:00',
-                            access: `['All Access', 'Add-On']`,
+                            access: `['Add-On', 'All Access']`,
                             extendedProps: {
                                 description: `Celebrate 50 years of rhythm &amp; rhyme with HipHop icon Jadakiss and guests Jae Murphy and Jasmine Solano`,
                                 date: `2023-11-04`,
@@ -1204,7 +1235,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Culture Park Opens',
                             start: '2023-11-02T10:00:00',
                             end: '2023-11-02T16:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Culture Park will provide an immersive experience that blends music, community, and diverse programming to create a unique and inclusive atmosphere.  Activities and experiences will include the Culture stage, food trucks, music, and a small Black business market.`,
                                 date: `2023-11-02`,
@@ -1244,7 +1275,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Fact or Cap: The Intelligence Community Tech Edition | Presented by US Intelligence',
                             start: '2023-11-02T11:15:00',
                             end: '2023-11-02T12:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Did you know that the United States Intelligence Community (IC) drives the development of everyday technology? Please join us in this workshop, where we will highlight the IC&#x27;s technical contributions that address some of the most demanding tech challenges in the United States. The session will end with a fireside chat with IC STEM professionals who will share their journeys and how YOU can be a part of one of the world&#x27;s premier secret tech innovators.`,
                                 date: `2023-11-02`,
@@ -1304,7 +1335,7 @@ COZY is proudly presented by Black &#x27;N Out in partnership with Out in Tech, 
                             title: 'Closing The AI Trust Gap: Battling Bias | Presented by Salesforce',
                             start: '2023-11-03T15:45:00',
                             end: '2023-11-03T16:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `We’re in a new era of technology. Generative AI is changing everything, and it’s coming at a pace we’ve never seen before. The innovations are incredible — but how can we ensure that this technology is built with ethical and inclusive practices in mind? Join Salesforce VP Jackie Chambers de Freitas as she dives into the AI Trust Gap, racial bias in AI, and guidelines for developing responsible technology.Jackie Chambers de FreitasVice President, Agile Delivery &amp; Coaching - Salesforce`,
                                 date: `2023-11-03`,
@@ -1324,7 +1355,7 @@ COZY is proudly presented by Black &#x27;N Out in partnership with Out in Tech, 
                             title: 'Expo Hall Open',
                             start: '2023-11-03T09:00:00',
                             end: '2023-11-03T17:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Engage with industry leaders, discover the latest products, attend interactive workshops, explore sponsor booths, and stay updated on emerging trends—all in one location.Featured Spaces: Gaming Lounge presented by Warner Bros; Booth #1004 Blavity Media Group Content Hub; Booth #1408 AFROTECH™ Booth; Booth #1502 Talent Infusion Booth; Booth #1500`,
                                 date: `2023-11-03`,
@@ -1342,7 +1373,7 @@ COZY is proudly presented by Black &#x27;N Out in partnership with Out in Tech, 
                             title: 'Zaytoven’s Mamas Basement Studio',
                             start: '2023-11-03T10:00:00',
                             end: '2023-11-03T16:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Don&#x27;t miss out on a photo-op in Zaytoven&#x27;s Mamas Basement Studio!
 
@@ -1390,7 +1421,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Opportunities for FinTech Disruption',
                             start: '2023-11-02T15:15:00',
                             end: '2023-11-02T15:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover the transformative power of fintech in the financial services industry. Explore fintech&#x27;s evolution, its impact on financial inclusion, and emerging opportunities in the sector. Join the conversation shaping the future of finance.Jason LeeChief Executive Officer/Founder - Salt Labs / DailyPay`,
                                 date: `2023-11-02`,
@@ -1408,7 +1439,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Harnessing Inclusivity for Responsible AI',
                             start: '2023-11-03T11:15:00',
                             end: '2023-11-03T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Tory HargroDirector of Design, Responsible AI &amp; Product Equity - MetaAlexandrea MorsonVice President, Artificial Intelligence &amp; Data and Innovation - Morgan Stanley`,
                                 date: `2023-11-03`,
@@ -1426,7 +1457,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Unlocking the Potential of Generative AI: A Responsible Approach | Presented by PwC',
                             start: '2023-11-02T14:45:00',
                             end: '2023-11-02T15:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `What is the true potential of generative AI and how can responsible practices help enhance the benefits of its use? Learn more with PwC as we delve into these questions, exploring the transformative power of generative AI and emphasizing the importance of responsible AI practices. Discover the diverse range of use cases for generative AI and how it can create a winning situation for businesses, stakeholders, and society at large.`,
                                 date: `2023-11-02`,
@@ -1446,7 +1477,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Product Equity - Designing for All',
                             start: '2023-11-02T09:30:00',
                             end: '2023-11-02T09:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Learn how to address the unique challenges faced by individuals who cannot fully access products due to financial, geographic, mental, physical, or emotional barriers. This session emphasizes the importance of consistent and persistent efforts to humanize the experiences of historically underinvested communities, paving the way for a more inclusive and empathetic product landscape. Be part of the transformation towards a world where products are designed and distributed with fairness and accessibility in mind.Timothy BardlavensDirector of Product Equity - Adobe`,
                                 date: `2023-11-02`,
@@ -1464,7 +1495,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Engineering Your Path: Tips for a Successful Career at the Intersection of Technology and Finance | Presented by Two Sigma',
                             start: '2023-11-03T14:45:00',
                             end: '2023-11-03T15:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join this panel with Sumbo Ojikutu, Lade King and Zia Williams, three senior leaders in Engineering at Two Sigma. Sumbo, Lade and Zia will discuss what it means to be an engineer in the quantitative investing field, including the opportunities it presents to build solutions and to solve complex challenges in finance. They will provide tips on how you can advance your career - from how to navigate challenges to leveraging internal mobility, why staying curious is key, and ways to adapt to the ever-changing technology landscape. They’ll also talk about what it means to be a woman of color in engineering leadership and what our industry can do to attract more underrepresented communities. This will be one session you won’t want to miss!Lade KingVice President, Technical Program Manager - Two SigmaZia WilliamsSenior Vice President, Investment Management Engineering - Two SigmaSumbo OjikutuSenior Vice President Strategy and Product Development - Two Sigma`,
                                 date: `2023-11-03`,
@@ -1484,7 +1515,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Providing Access to Top Tech Talent for Top Results | Presented by Wells Fargo',
                             start: '2023-11-02T12:45:00',
                             end: '2023-11-02T13:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Top tier tech talent continues to be a priority for financial services companies, with skillsets specific to infrastructure, cyber, AI and data at the top of their wish lists. As companies like Wells Fargo work to develop next-gen personalized customer experiences and keep consumer data ultra-protected, they need a next-gen workforce to help deliver on their roadmaps. What are the challenges to allowing the next generation of Black and African American graduates to rise to the occasion, and how can companies vie to position themselves as the most desirable employer for the Black and African American community?Kwansah MadaniSenior Software Engineer, Digital Technology &amp; Innovation - Wells FargoAllyn L. ShawChief Operating Officer of Consumer Lending Technology - Wells FargoMelissa KancovSenior Vice President Head of External Partnerships and Engagement for Technology Diversity, Community and Sustainability - Wells Fargo`,
                                 date: `2023-11-02`,
@@ -1620,7 +1651,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Movies &amp; Mimosas Presented By kweliTV: Wilmington on Fire',
                             start: '2023-11-02T13:00:00',
                             end: '2023-11-02T15:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: Wilmington on Fire (+ sneak peak WOF 2)Fireside Chat: How Black Filmmakers Are Reclaiming Their History (w/ WOF filmmaker)Christopher EverettFounder &amp; Director - Speller Street Films`,
                                 date: `2023-11-02`,
@@ -1640,7 +1671,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Paving Your Path in Media',
                             start: '2023-11-02T13:15:00',
                             end: '2023-11-02T14:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover the insights and strategies to navigate the ever-evolving media landscape. Join Moderator Amélie Ebongué, a global brand marketing manager and bestselling author, alongside esteemed panelists Sylvia Obell, a celebrated journalist and on-air talent, and Cassandra Illidge, Vice President of Partnerships at Getty Images, as they provide valuable perspectives and practical advice for carving your own path in the dynamic world of media.Sylvia ObellJournalist - Cassandra IllidgeVice President of Partnerships and Executive Director of the HBCU Grants Program - Getty Images`,
                                 date: `2023-11-02`,
@@ -1742,7 +1773,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Influencing an Inclusive future in AI | Presented by ServiceNow',
                             start: '2023-11-03T13:30:00',
                             end: '2023-11-03T14:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Generative AI, or some similar variation, will continue to play a significant role in the foreseeable future. As companies seek to harness this tool to empower their workforce, we must carefully examine the advantages and repercussions it may have on Black communities. This panel will explore how we influence an inclusive future in AI for ourselves and the future generation.Karen PavlinSenior Vice President &amp; Chief Equity and Inclusion Officer - Service NowJohn CastellyChief Ethics and Compliance Officer - Service NowDarice BrownSr. Director, DEI Strategic Partnerships - Service Now`,
                                 date: `2023-11-03`,
@@ -1784,7 +1815,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Using Storytelling and Imagination to Ship Product and Ideas',
                             start: '2023-11-02T13:30:00',
                             end: '2023-11-02T14:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Learn to merge intellect and imagination to master the art of persuasive storytelling in this engaging workshop. Discover the psychology behind storytelling, bridge analytical thinking with creativity, and craft compelling narratives that captivate your audience. Gain practical skills for pitching ideas and products effectively, with hands-on exercises and real-world examples. Say goodbye to office-speak and hello to unforgettable stories that set you apart professionally. Don&#x27;t miss the chance to leave a lasting impact and make your ideas and products unforgettable!Bianca MaxwellPrincipal Product Manager of Growth - Disney`,
                                 date: `2023-11-02`,
@@ -1822,7 +1853,7 @@ Sample Jollof Rice dishes in a festive blind-tasting, and vote for the best one 
                             title: 'Zaytoven’s Mamas Basement Studio',
                             start: '2023-11-02T10:00:00',
                             end: '2023-11-02T16:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Don&#x27;t miss out on a photo-op in Zaytoven&#x27;s Mamas Basement Studio!
 
@@ -1842,7 +1873,7 @@ If you&#x27;re lucky, you might drop in as acclaimed music producer Zaytoven is 
                             title: 'Women Spearheading Change in Space, Data &amp; AI',
                             start: '2023-11-03T15:30:00',
                             end: '2023-11-03T16:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `As Maya Angelou once said, “If you don’t like something, change it.” These three women are doing so. Join them as they discuss the overlapping efforts in space, climate change, data equity, artificial intelligence and our national security. Get the behind-the-scenes view of their work, how they landed there and what you should know about the federal science ecosystem. You’ll be in for a treat!Dominique Duval-DiopU.S. Chief Data Scientist - White House Office of Science and Technology PolicyAndrea M. O&#x27;NealSenior Advisor for Equity - U.S. General Services AdministrationQuincy BrownDirector of Space STEM and Workforce Policy - White House National Space Council-`,
                                 date: `2023-11-03`,
@@ -1860,7 +1891,7 @@ If you&#x27;re lucky, you might drop in as acclaimed music producer Zaytoven is 
                             title: 'Black and Well-Traveled: Centering Black Travelers through Technology | Presented by Expedia Group',
                             start: '2023-11-02T10:00:00',
                             end: '2023-11-02T11:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Black travelers make up over $100B of the travel market, however our experiences are often not centered in the travel industry. In this session we’ll discuss the power and state of Black travelers, how technology is innovating the Black traveler experience, and the future of a more inclusive travel industry. Hear from Expedia Group leaders with guest speaker from partner and Black travel platform GreenBook Global on how they are working to make the travel industry more inclusive, accessible, safe, and celebratory for everyone. Discover opportunities to help drive change, support Black-Owned businesses, and connect to a global travel and tech community.Clayton NelsonVP Retail Partnerships - Expedia GroupLawrence PhillipsFounder &amp; Chief Executive Officer - Green Book GlobalAlexandra (Ally) Legend SiegelVice President, Global Inclusion &amp; Diversity Talent - Expedia Group`,
                                 date: `2023-11-02`,
@@ -1902,7 +1933,7 @@ If you&#x27;re lucky, you might drop in as acclaimed music producer Zaytoven is 
                             title: 'Save our Home Planet: Take Action',
                             start: '2023-11-02T11:40:00',
                             end: '2023-11-02T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `In this session, we will address the critical issue of climate change and its disproportionate impact on marginalized communities and the less fortunate. The discussion will focus on Patagonia&#x27;s commitment to environmental sustainability, justice, equity, and antiracism. We will explore practical steps that individuals and organizations can take to combat climate change and promote fairness. This conversation aims to inspire action and collaboration for a more just and sustainable world.Amber HikesDeputy Executive Director for Strategy &amp; Culture - ACLUTheresita RichardChief People &amp; Culture Officer - Patagonia`,
                                 date: `2023-11-02`,
@@ -1920,7 +1951,7 @@ If you&#x27;re lucky, you might drop in as acclaimed music producer Zaytoven is 
                             title: 'Fin-Tech Reimagined: The Innovative Future of Financial Services | Presented by Morgan Stanley',
                             start: '2023-11-03T09:30:00',
                             end: '2023-11-03T10:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join innovators from Morgan Stanley for a moderated conversation on what it means to embody the essence of startup dynamism, with the scale and stability to leverage the most cutting-edge technology trends within the broader landscapePeter AkwaboahManaging Director, Chief Operating Officer (COO) of Technology &amp; Global Head of Innovation - Morgan StanleyTodd JohnsonManaging Director, Head of Products &amp; Strategy - Morgan Stanley Wealth ManagementJennifer DavidsonExecutive Director, Program Management, Generative AI - Morgan Stanley Wealth Management`,
                                 date: `2023-11-03`,
@@ -1958,7 +1989,7 @@ If you&#x27;re lucky, you might drop in as acclaimed music producer Zaytoven is 
                             title: 'The Balancing Act of Implementing Generative AI in a Large Organization | Presented by Intuit',
                             start: '2023-11-03T10:30:00',
                             end: '2023-11-03T11:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `In the dynamic world of technology, transformation is not just an aspiration but an imperative. Now that we are in the generative AI era, it becomes even more critical to understand the nuances in helping an organization navigate tech transformation. This talk will explore the essential strategic pillars that underpin successful tech transformation.Jennifer BookerVice President of Technical Program Management - Intuit`,
                                 date: `2023-11-03`,
@@ -2136,7 +2167,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'From Idea to Investment with Neville Boston of Reviver',
                             start: '2023-11-02T15:45:00',
                             end: '2023-11-02T16:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover Neville Boston&#x27;s remarkable journey from idea to investment in the automotive industry. Join us as he shares the evolution of his groundbreaking concept, the challenges faced, strategies employed to secure investments, and the critical role of innovation. Gain insights and inspiration for your own entrepreneurial pursuits in this engaging session.Neville BostonFounder &amp; Chief Strategy Officer - Reviver`,
                                 date: `2023-11-02`,
@@ -2176,7 +2207,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'From Beats to Bytes:  the Convergence of Music and Tech',
                             start: '2023-11-03T13:45:00',
                             end: '2023-11-03T14:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for an insightful session that delves into the convergence of music and technology. Featuring artists Lord Afrixana and Pheelz, they will provide valuable insights into the transformative impact of technology on the music industry. Moderated by industry veteran Marc Byers, this session promises engaging discussions, behind-the-scenes anecdotes, and a glimpse into the future of music tech.Lord AfrixanaRapper &amp; Singer - . PheelzSongwriter &amp;Producer - Marc ByersFounder - Protect The Culture`,
                                 date: `2023-11-03`,
@@ -2194,7 +2225,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Black Media Takeover',
                             start: '2023-11-02T14:00:00',
                             end: '2023-11-02T14:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for a dynamic and insightful discussion as we bring together some of the most influential voices in the world of Black-owned media. This panel will explore the transformative power of Black media in today&#x27;s digital landscape, shedding light on how it continues to shape narratives, influence culture, and drive change.Angelica NwanduFounder &amp; Chief Executive Officer - The Shade RoomDetavio SamuelsChief Executive Officer - REVOLTOrchid RichardsonSenior Vice President of Digital - Blavity, Inc.`,
                                 date: `2023-11-02`,
@@ -2248,7 +2279,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Defining AI Bias in Insurance | Presented by Prudential Financial, Inc.',
                             start: '2023-11-03T12:30:00',
                             end: '2023-11-03T13:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `AI systems that have been trained on large amounts of data can have biases, particularly with regard to race and gender, that exacerbate discrimination. Defining AI bias and where it can come into play for businesses is Step One to creating a more equitable environment.Salene Hitchcock-GearSVP Individual Life Insurance - Prudential Financial, INC.Robert HuntsmanVice President, Chief Data Scientist - Prudential Financial, INC.`,
                                 date: `2023-11-03`,
@@ -2268,7 +2299,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'How HBCUs are Preparing Tech Entrepreneurs in AI and Beyond',
                             start: '2023-11-03T11:30:00',
                             end: '2023-11-03T12:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover the critical role HBCUs play in preparing resilient tech entrepreneurs, particularly in the field of Artificial Intelligence (AI). This presentation underscores the enduring legacy of HBCUs in cultivating Black excellence and addresses the imperative of equipping Black technologists with the tools to embed anti-bias principles into AI innovations. Faculty, researchers, and innovators from HBCUs will showcase their AI research and innovations, while highlighting the institutions&#x27; support for tech entrepreneurship. Furthermore, the session calls on the tech industry to collaborate with HBCUs, fostering diversity, equity, and innovation within AI and related fields.Erin McKinneyNational Executive Director and PNC National Center for Entrepreneurship - Howard UniversityKweli ZukeriDirector of User Experience &amp; Web Strategy - Howard UniversityDr. Legand BurgeProfessor of Computer Science - Howard University`,
                                 date: `2023-11-03`,
@@ -2286,7 +2317,7 @@ This event is open to AFROTECH™ Conference attendees only and is first come, f
                             title: 'Attendee Badge Pick-up | ACL',
                             start: '2023-11-03T08:00:00',
                             end: '2023-11-03T18:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Badge pick up only; No New Registration`,
                                 date: `2023-11-03`,
@@ -2444,7 +2475,7 @@ Note: Southern Brunch.`,
                             title: 'If AI Ruled the World (Imagine That)',
                             start: '2023-11-03T10:30:00',
                             end: '2023-11-03T10:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `This session explores a world where AI is deeply integrated into our systems and institutions. It examines the challenge of eliminating bias from AI and discusses ethical considerations. It also focuses on ensuring AI benefits everyone equally, explores economic opportunities, discusses regulation, and emphasizes the importance of education and upskilling in an AI-driven society. Join us to shape a future where AI benefits all and powers economic growth.Kwesi AmesVice President, Software Engineering - Salesforce Inc.`,
                                 date: `2023-11-03`,
@@ -2462,7 +2493,7 @@ Note: Southern Brunch.`,
                             title: 'Building Generative AI Applications with Amazon Bedrock',
                             start: '2023-11-03T10:45:00',
                             end: '2023-11-03T11:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover how to build generative AI applications effortlessly with Amazon Bedrock. In this session, we&#x27;ll use live coding to demonstrate creating image and text generation applications. To speed up the coding process, we&#x27;ll also incorporate real-time suggestions from Amazon CodeWhisperer. This session is a must-attend for builders looking for practical insights for building their next great app.Banjo ObayomiSenior Developer Advocate - AWS`,
                                 date: `2023-11-03`,
@@ -2520,7 +2551,7 @@ Note: Southern Brunch.`,
                             title: 'Access Amplified: What it Takes to Drive Financial Access and Empowerment | Presented by Mastercard',
                             start: '2023-11-02T13:45:00',
                             end: '2023-11-02T14:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-02`,
@@ -2540,7 +2571,7 @@ Note: Southern Brunch.`,
                             title: 'The Toolkit to Advancing Your Engineering Career',
                             start: '2023-11-02T10:30:00',
                             end: '2023-11-02T11:15:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join engineering managers from top Silicon Valley tech startups, including Databricks and Grammarly, for an empowering session focused on advancing your engineering career. Discover essential strategies for success, navigate the unique challenges of Silicon Valley, hone crucial soft and technical skills, and learn from diverse perspectives. Whether you&#x27;re a newcomer or a seasoned pro, this session promises actionable insights to supercharge your career in the dynamic world of tech startups.Maneesh BhideDirector, Field Engineering - DatabricksLetam Biira - Chris LocklinHead of Data Platform - Grammarly`,
                                 date: `2023-11-02`,
@@ -2701,7 +2732,7 @@ Picture yourself surrounded by the most beautiful, brilliant, and talented black
                             title: 'Movies &amp; Mimosas Presented By kweliTV: Afro Algorithms',
                             start: '2023-11-03T11:00:00',
                             end: '2023-11-03T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.   Screen: Afro Algorithms Fireside Chat: Exploring Afro Futurism and AI in Film (w/ Afro Algorithms filmmaker)Anatola ArabaFilmmaker &amp; Futurist -`,
                                 date: `2023-11-03`,
@@ -2811,7 +2842,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'Inclusivity at the Forefront of Design',
                             start: '2023-11-03T14:15:00',
                             end: '2023-11-03T14:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Explore the integration of inclusive design into product development, drawing on IDEO&#x27;s collaborations with LA County and the Ford Foundation. Gain insights into strategies for inclusively designing intelligent products and services to enhance daily life. Learn actionable approaches to implementing DEI strategies and fostering inclusivity within your tech team. Join us to embrace a future of tech innovation driven by diversity and inclusion.Wes EugenePartner and Chief Information Officer - IDEO`,
                                 date: `2023-11-03`,
@@ -2869,7 +2900,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'We are all Neo-Scientists',
                             start: '2023-11-02T12:20:00',
                             end: '2023-11-02T12:40:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Delve into the dynamic convergence of culture and science, and their pivotal roles in our swiftly evolving world. This session highlights the inherent spirit of invention within black culture and how it intertwines with scientific innovation to forge new horizons, leaving a profound mark on our global future. Join us to celebrate culture&#x27;s integral role in scientific advancement and gain insights into its transformative influence on our collective journey ahead.Riana LynnChief Executive Officer - Journey FoodsSinead BovellFounder - WAYE`,
                                 date: `2023-11-02`,
@@ -2887,7 +2918,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'The Future of Music with Spatial Audio | Presented by Apple',
                             start: '2023-11-02T12:30:00',
                             end: '2023-11-02T13:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `The Future of Music with Spatial Audio&#x27;, a dynamic and insightful panel discussion exploring the transformative potential of Spatial Audio with Dolby Atmos in the music industry.`,
                                 date: `2023-11-02`,
@@ -2907,7 +2938,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'Tech Innovation Leading Social Change',
                             start: '2023-11-02T12:00:00',
                             end: '2023-11-02T12:20:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Explore the transformative power of technology-driven innovation in this engaging session. Discover how tech innovations are driving positive social change and reshaping communities. Join us for a thought-provoking discussion on the intersection of technology, innovation, and social impact, as we share insights and strategies that are fostering a better future for all. Don&#x27;t miss this opportunity to be inspired and informed about the role of tech in leading social change.Chloe Hakim-MooreFounder &amp; Chief Executive Officer - The Hakim-Moore Agency`,
                                 date: `2023-11-02`,
@@ -2925,7 +2956,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'General Registration | Fairmont',
                             start: '2023-11-01T12:00:00',
                             end: '2023-11-01T20:00:00',
-                            access: `['Speakers', 'All Access', 'Executive', 'Sponsors']`,
+                            access: `['Speakers', 'Sponsors', 'All Access', 'Executive']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-01`,
@@ -2963,7 +2994,7 @@ Don&#x27;t miss out on this opportunity to celebrate excellence, forge new relat
                             title: 'The Future of Environmental Policy',
                             start: '2023-11-02T10:45:00',
                             end: '2023-11-02T11:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for an insightful session that will explore key challenges and opportunities in environmental policy with panelists Michael Regan (EPA Administrator) and Lisa Jackson (VP at Apple). They&#x27;ll discuss the intersection of environmental protection, technology, and social equity, providing insights on evolving policy, climate strategies, and diversity in decision-making.Michael ReganAdministrator - Environmental Protection AgencyLisa JacksonVP of Environment, Policy and Social Initiatives - AppleJeff NelsonCo-Founder &amp; Chief Operating Officer - Blavity, Inc.`,
                                 date: `2023-11-02`,
@@ -3047,7 +3078,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'To Patent or Not to Patent?',
                             start: '2023-11-02T11:15:00',
                             end: '2023-11-02T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover the world of intellectual property (IP) rights in this session. Learn about patents, copyrights, trademarks, and trade secrets, and when and how to obtain protection for your creative works and innovations. Experts will explain the significance of IP in your career and business and reveal strategies to leverage it effectively. Join us as we harness the power of IP for success and innovation protection.Danielle ColemanAssistant General Counsel – Head of Litigation - VMware, Inc.Derrick BrentDeputy Under Secretary of Commerce for Intellectual Property and Deputy Director - USTPOMichael BinnsAssociate General Counsel – Head of Patents &amp; Trade Secrets - Meta`,
                                 date: `2023-11-02`,
@@ -3065,7 +3096,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'Movies &amp; Mimosas Presented By kweliTV:  The Matumbilas &amp; Your Black Is Beautiful',
                             start: '2023-11-02T10:00:00',
                             end: '2023-11-02T11:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.   Screen: Ep. 1 of new season of The MatumbilasScreen: Treal Toonz Your Black Is BeautifulFireside Chat: Self-taught Animators Discuss The Tech, Tools and Tenacity They Used to Learn Animation (w/ the animators of The Matumbilas + Your Black Is Beautiful)Zul ManziCreator of the Matumbilas -`,
                                 date: `2023-11-02`,
@@ -3103,7 +3134,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'How I Did It: Uplifting Culture within Self-Entrepreneurship',
                             start: '2023-11-03T15:00:00',
                             end: '2023-11-03T15:45:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Join us for an inspiring and insightful session as we dive into the world of self-entrepreneurship with three exceptional individuals who have made a significant impact in their respective fields. In &quot;How I Did It: Uplifting Culture within Self-Entrepreneurship,&quot; our esteemed speakers will share their personal journeys, experiences, and the strategies they employed to uplift and shape culture within their entrepreneurial endeavors.Jason LeeFounder &amp; Chief Executive Officer - HollywoodUnlockedGloria GovanFounder &amp; President - RLNTLSSCam KirkOwner &amp; Photographer - Collective Gallery`,
                                 date: `2023-11-03`,
@@ -3139,7 +3170,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'Tech, AI, Finance and the Future of Work | Presented by Discover',
                             start: '2023-11-03T10:00:00',
                             end: '2023-11-03T11:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `In this condensed 45-minute workshop, we will dive into Discover&#x27;s approach to leveraging AI in data systems and cybersecurity in fintech. We&#x27;ll emphasize that AI is not a static strategy but a dynamic enabler of strategy that continually improves productivity and efficiency across the fintech industry. Participants will gain valuable insights into Discover&#x27;s innovative initiatives and how AI can enhance their career prospects.Brent DeMarVice President, Head of Data Platforms - DiscoverShaun KhalfanSenior Vice President, Chief Information Security Officer - DiscoverTori RohlssonDirector of Exectuvie Recruiting, Human Resources - Discover`,
                                 date: `2023-11-03`,
@@ -3159,7 +3190,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'Welcome to CampusONE:The Future of Work',
                             start: '2023-11-03T12:30:00',
                             end: '2023-11-03T13:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `This session highlights the transition from Web2 to Web3 and its significance, emphasizing the challenge of ensuring equitable adoption within communities of color. Thurgood Marshall College Fund (TMCF) introduces &quot;CampusONE&quot; to prepare Historically Black Colleges and Universities (HBCU) students for Web3 and the metaverse. CampusONE offers immersive experiences and programs to equip emerging entrepreneurs for future jobs. We will explore CampusONE&#x27;s role in empowering HBCU students, promoting diversity in Web3, and bridging the digital divide.Muhsinah MorrisDirector of Morehouse’s Metaversity VR Project and Senior Assistant Professor - Morehouse CollegeTamaria Kai PerryVP of Innovation &amp; Entrepreneurship - Thurgood Marshall College Fund`,
                                 date: `2023-11-03`,
@@ -3177,7 +3208,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'General Registration | Austin Convention Center',
                             start: '2023-11-04T08:00:00',
                             end: '2023-11-04T14:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access', 'Press']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Press', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-04`,
@@ -3195,7 +3226,7 @@ Kick off your Afrotech experience with Brown Skin Brunchin’, a founder funded,
                             title: 'Expo Hall Open',
                             start: '2023-11-04T09:00:00',
                             end: '2023-11-04T12:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Engage with industry leaders, discover the latest products, attend interactive workshops, explore sponsor booths, and stay updated on emerging trends—all in one location.Featured Spaces: Gaming Lounge presented by Warner Bros; Booth #1004 Blavity Media Group Content Hub; Booth #1408 AFROTECH™ Booth; Booth #1502 Talent Infusion Booth; Booth #1500`,
                                 date: `2023-11-04`,
@@ -3317,7 +3348,7 @@ Don&#x27;t miss out on this one-of-a-kind event that and showcases the incredibl
                             title: 'AFROTECH™  College Student Reception',
                             start: '2023-11-03T15:00:00',
                             end: '2023-11-03T17:00:00',
-                            access: `['Students', 'All Access']`,
+                            access: `['All Access', 'Students']`,
                             extendedProps: {
                                 description: `The AFROTECH™ College Student Reception will be an opportunity for sponsors to recruit, network and fill their organization’s talent pipeline with promising college students in tech. 
 
@@ -3344,7 +3375,7 @@ PNC Bank`,
                             title: 'How to Infuse Culture into Hyper-Automation',
                             start: '2023-11-02T14:30:00',
                             end: '2023-11-02T15:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Discover how Hyper-Automation, the most cost-effective way to solve business challenges with software, is accessible to everyone, regardless of their coding experience. Explore how problem-solving skills from black culture can be applied to achieve exponential results in any business. Hear from experts who have leveraged these skills and Hyper-Automation to transform their organizations. Join this session to demystify Hyper-Automation and unlock its potential for innovation and efficiency in your own journey.David WilliamsAssistant Vice President, Hyper-Automation - AT&amp;T`,
                                 date: `2023-11-02`,
@@ -3406,7 +3437,7 @@ This will be one of those nights!! Early arrival is highly suggested and we will
                             title: 'Starlink: Expanding Boundaries',
                             start: '2023-11-03T15:00:00',
                             end: '2023-11-03T15:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Starlink, engineered by SpaceX, delivers high-speed, low-latency internet around the globe, even in the most remote and rural locations.
 
@@ -3446,7 +3477,7 @@ Join Ian McCullough, Manager of Starlink Enterprise Sales for North America, as 
                             title: 'Movies &amp; Mimosas Presented By kweliTV: Sirius Lee',
                             start: '2023-11-03T10:00:00',
                             end: '2023-11-03T11:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: Ep. 1 of new season of Sirius Lee: The Problematic Time Transplant Fireside Chat: Blerd Creators Redefining the Culture (w/ Sirius Lee filmmaker)Theo HollingsworthDepartment Manager - Pixar Animation Studios`,
                                 date: `2023-11-03`,
@@ -3502,7 +3533,7 @@ Grab your squad and join us for some Trivia For Us fun and a chance to win up to
                             title: 'Navigating Market Fit as an Entrepreneur',
                             start: '2023-11-03T12:20:00',
                             end: '2023-11-03T12:40:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `Explore strategies for underrepresented founders to identify and nurture product-market fit, essential for startup success. Learn how this alignment can accelerate growth and attract funding, with insights from experienced entrepreneurs and investors. Connect with a supportive community and gain practical tips for overcoming unique challenges.Kofi AmpaduPartner, Talent x Opportunity - Andreessen HorowitzJason McBrideInvestment Partner - M12`,
                                 date: `2023-11-03`,
@@ -3562,7 +3593,7 @@ Grab your squad and join us for some Trivia For Us fun and a chance to win up to
                             title: 'Happy Hour on the Expo Hall',
                             start: '2023-11-03T15:30:00',
                             end: '2023-11-03T16:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-03`,
@@ -3738,7 +3769,7 @@ Don&#x27;t miss out on this opportunity to network and learn from industry exper
                             title: 'Generative AI: Changing The Game For Productivity And Creativity | Presented by Microsoft',
                             start: '2023-11-02T09:00:00',
                             end: '2023-11-02T10:00:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `During this session, learn how to leverage AI to design a life that aligns with your career goals, personal passions, and overall aspirations. Join Microsoft for this interactive workshop to dive deeper into how generative AI can be harnessed as a powerful tool for productivity and creativity, discover the ways to utilize it responsibly in various industries, and everyday usage – from content creation to beauty and wellness from our community.Andrew BerkleySenior Program Manager, Office of Responsible AI - MicrosoftAnthony KerrSenior Product Marketing Manager, Search and AI - MicrosoftSinead BovellFounder - WAYE`,
                                 date: `2023-11-02`,
@@ -3845,7 +3876,7 @@ Sponsor Registration:
                             title: 'Happy Hour on the Expo Hall',
                             start: '2023-11-02T15:30:00',
                             end: '2023-11-02T16:30:00',
-                            access: `['Students', 'General Admission', 'Executive', 'Corporate', 'All Access']`,
+                            access: `['Corporate', 'Executive', 'All Access', 'General Admission', 'Students']`,
                             extendedProps: {
                                 description: `No description available`,
                                 date: `2023-11-02`,
@@ -3900,18 +3931,14 @@ Sponsor Registration:
                             
                         },
                         
-                    ],
+                        ]);
+                    }
             });
 
             calendar.render();
+            selector.addEventListener('change', function() {
+                calendar.refetchEvents();
+            });
         </script>
-        <!-- TODO: filter calendar by access type -->
-        <select id="selector">
-            <option value="all">All</option>
-            <option value="1">Marc</option>
-            <option value="2">Tom</option>
-            <option value="3">David</option>
-          </select>
-        <div id="event-details-panel" style="display: none;"></div>
     </body>
 </html>

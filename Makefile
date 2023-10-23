@@ -6,6 +6,7 @@ download:
 
 static:
 	./env/bin/python3 ./create_static_site.py
+	cp -v ./events_list.json ./public
 
 crunk: setup env requirements check
 	@echo 
