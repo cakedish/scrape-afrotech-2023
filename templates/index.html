@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ5WQDMB66"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());        
+          gtag('config', 'G-PJ5WQDMB66');
+        </script>        
         <title>A Very Unofficial Afrotech Calendar</title>
         <style>
             #event-details-panel {
@@ -142,5 +150,13 @@
                 calendar.refetchEvents();
             });
         </script>
+        <!-- TODO: filter calendar by access type -->
+        <select id="selector">
+            <option value="all">All</option>
+            <option value="1">Marc</option>
+            <option value="2">Tom</option>
+            <option value="3">David</option>
+          </select>
+        <div id="event-details-panel" style="display: none;"></div>
     </body>
 </html>
