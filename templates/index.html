@@ -17,6 +17,37 @@
                 padding: 20px;
                 z-index: 1000;
             }
+
+/* Style the legend container */
+.legend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Pull items to the left */
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+/* Style each legend item */
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Style the color dot */
+.legend-dot {
+    width: 20px; /* Width of the color dot */
+    height: 20px; /* Height of the color dot */
+    margin-right: 5px; /* Adjust the margin to make them more tightly packed */
+    border-radius: 50%; /* Make the dot round */
+}
+
+/* Additional styling for text */
+.legend-item span {
+    display: inline-block;
+}
+
+
+
         </style>
         <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.9/index.global.min.js'></script>
         <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/web-component@6.1.9/index.global.min.js'></script>
@@ -40,7 +71,30 @@
             <option value="9">RSVP Required (Work in Progress)</option>
             <option value="10">Add-On (Work in Progress)</option>
         </select>
-        <p></p>
+        <p>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-dot" style="background-color: #4CAF50;"></span>
+                    General Admission
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot" style="background-color: orange;"></span>
+                    Students
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot" style="background-color: #F44336;"></span>
+                    RSVP Required
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot" style="background-color: #FFD700;"></span>
+                    All Access
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot" style="background-color: #2196F3;"></span>
+                    Other
+                </div>
+            </div>
+        </p>
         <div id="calendar"></div>
         <div id="event-details-panel" style="display: none;"><p></p></div>
         <script>
@@ -49,6 +103,7 @@
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
                 initialDate: '2023-11-01',
+                stickyHeaderDates: true,
                 // height: 'auto',
                 headerToolbar: {
                     "left": "prev,next today",
