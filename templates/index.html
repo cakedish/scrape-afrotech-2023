@@ -100,6 +100,7 @@
         <script>
             let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
+            let processedEventsData = {{ events | tojson }};
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
                 initialDate: '2023-11-01',
@@ -164,39 +165,7 @@
                         }
                     },                    
                     events: function (fetchInfo, successCallback, failureCallback) {
-                        successCallback([
-                        {% for event in events %}
-                        {
-                            id: '{{ event.id }}',
-                            title: '{{ event.title }}',
-                            start: '{{ event.start }}',
-                            end: '{{ event.end }}',
-                            access: `{{ event.access }}`,
-                            extendedProps: {
-                                description: `{{ event.description }}`,
-                                date: `{{ event.date }}`,
-                                time: `{{ event.time }}`,
-                                {% if event.image %}
-                                    image: '{{ event.image }}',
-                                {% endif %}                                 
-                                {% if event.link %}
-                                    link: `{{ event.link }}`,
-                                {% endif %}                                
-                            },
-                            {% if "General Admission" in event.access %}
-                                backgroundColor: '#4CAF50',
-                            {% elif "Students" in event.access %}
-                                backgroundColor: 'orange',
-                            {% elif "RSVP Required" in event.access %}
-                                backgroundColor: '#F44336',
-                            {% elif "All Access" in event.access %}
-                                backgroundColor: '#FFD700',
-                            {% else %}
-                                backgroundColor: '#2196F3',
-                            {% endif %}
-                        },
-                        {% endfor %}
-                        ]);
+                        successCallback(processedEventsData);
                     }
             });
 
