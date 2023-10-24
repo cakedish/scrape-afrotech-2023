@@ -26,7 +26,7 @@ for event in events:
         "end": event["end"],
         "extendedProps": {
             "description": event["description"],
-            "foobar": event["date"],
+            "date": event["date"],
             "time": event["time"],
             "image": event["image"] if event.get("image") else False,
             "link": event["link"] if event.get("link") else False,
