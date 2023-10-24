@@ -1,6 +1,5 @@
 """Compiles the metadata and template into a static HTML file"""
 import os
-import json
 import bios
 from jinja2 import Environment, FileSystemLoader
 
@@ -18,8 +17,8 @@ event_template = env.get_template("index.html")
 
 # Process each event and store them in a list
 processed_events = []
+
 for event in events:
-    # Apply Jinja template-like processing to each event
     processed_event = {
         "id": event["id"],
         "title": event["title"],
@@ -27,14 +26,17 @@ for event in events:
         "end": event["end"],
         "extendedProps": {
             "description": event["description"],
-            "date": event["date"],
+            "foobar": event["date"],
             "time": event["time"],
+            "image": event["image"] if event.get("image") else False,
+            "link": event["link"] if event.get("link") else False,
+            "location": event["location"] if event.get("location") else False,
         },
     }
 
     if event.get("access"):
         processed_event["extendedProps"]["access"] = event["access"]
-    
+
         if "General Admission" in event["access"]:
             processed_event["backgroundColor"] = "#4CAF50"
         elif "Students" in event["access"]:
@@ -45,29 +47,21 @@ for event in events:
             processed_event["backgroundColor"] = "#FFD700"
         else:
             processed_event["backgroundColor"] = "#2196F3"
-        if event.get("image"):
-            processed_event["extendedProps"]["image"] = event["image"]
-
-    if event.get("link"):
-        processed_event["extendedProps"]["link"] = event["link"]
-
-
 
     processed_events.append(processed_event)
 
-# Render the template with the processed events
-rendered_template = event_template.render(events=json.dumps(processed_events))
+# Render the template with the processed events; '| tojson' is applied in the template
+rendered_template = event_template.render(events=processed_events)
 
 # Check if the directory exists
 if not os.path.exists(PUBLIC_DIRECTORY):
     # If it doesn't exist, create the directory
     os.makedirs(PUBLIC_DIRECTORY)
-    print(f"Directory '{PUBLIC_DIRECTORY}' created.")
-else:
-    print(f"Directory '{PUBLIC_DIRECTORY}' already exists.")
 
 # Save the rendered template as an HTML file
 with open(f"{PUBLIC_DIRECTORY}/index.html", "w", encoding="utf-8") as html_file:
     html_file.write(rendered_template)
 
-print(f"Template populated with events data and saved as {PUBLIC_DIRECTORY}/index.html")
+bios.write(f"{PUBLIC_DIRECTORY}/events.json", processed_events)
+
+print(f"Template populated and saved as {PUBLIC_DIRECTORY}/index.html")

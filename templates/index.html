@@ -18,36 +18,33 @@
                 z-index: 1000;
             }
 
-/* Style the legend container */
-.legend {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Pull items to the left */
-    padding: 10px; /* Adjust the padding as needed */
-}
+            /* Style the legend container */
+            .legend {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start; /* Pull items to the left */
+                padding: 10px; /* Adjust the padding as needed */
+            }
 
-/* Style each legend item */
-.legend-item {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Adjust the margin as needed */
-}
+            /* Style each legend item */
+            .legend-item {
+                display: flex;
+                align-items: center;
+                margin-right: 10px; /* Adjust the margin as needed */
+            }
 
-/* Style the color dot */
-.legend-dot {
-    width: 20px; /* Width of the color dot */
-    height: 20px; /* Height of the color dot */
-    margin-right: 5px; /* Adjust the margin to make them more tightly packed */
-    border-radius: 50%; /* Make the dot round */
-}
+            /* Style the color dot */
+            .legend-dot {
+                width: 10px; /* Width of the color dot */
+                height: 10px; /* Height of the color dot */
+                margin-right: 5px; /* Adjust the margin to make them more tightly packed */
+                border-radius: 50%; /* Make the dot round */
+            }
 
-/* Additional styling for text */
-.legend-item span {
-    display: inline-block;
-}
-
-
-
+            /* Additional styling for text */
+            .legend-item span {
+                display: inline-block;
+            }
         </style>
         <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.9/index.global.min.js'></script>
         <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/web-component@6.1.9/index.global.min.js'></script>
@@ -57,41 +54,28 @@
     
     </head>
     <body>
-        <!-- TODO: filter calendar by access type -->
         <select id="selector">
             <option value="all">Show all events</option>
-            <option value="1">General Admission (Work in Progress)</option>
-            <option value="2">Students (Work in Progress)</option>
-            <option value="3">Executive (Work in Progress)</option>
-            <option value="4">All Access (Work in Progress)</option>
-            <option value="5">Speakers (Work in Progress)</option>
-            <option value="6">Corporate (Work in Progress)</option>
-            <option value="7">Sponsors (Work in Progress)</option>
-            <option value="8">Press (Work in Progress)</option>
-            <option value="9">RSVP Required (Work in Progress)</option>
-            <option value="10">Add-On (Work in Progress)</option>
-        </select>
+            <option value="General Admission">General Admission (Work in Progress)</option>
+            <option value="All Access">All Access (Work in Progress)</option>
+            <option value="RSVP Required">RSVP Required (Work in Progress)</option>
+        </select>        
         <p>
             <div class="legend">
                 <div class="legend-item">
-                    <span class="legend-dot" style="background-color: #4CAF50;"></span>
-                    General Admission
+                    <span class="legend-dot" style="background-color: #4CAF50;"></span>General Admission
                 </div>
                 <div class="legend-item">
-                    <span class="legend-dot" style="background-color: orange;"></span>
-                    Students
+                    <span class="legend-dot" style="background-color: orange;"></span>Students
                 </div>
                 <div class="legend-item">
-                    <span class="legend-dot" style="background-color: #F44336;"></span>
-                    RSVP Required
+                    <span class="legend-dot" style="background-color: #F44336;"></span>RSVP Required
                 </div>
                 <div class="legend-item">
-                    <span class="legend-dot" style="background-color: #FFD700;"></span>
-                    All Access
+                    <span class="legend-dot" style="background-color: #FFD700;"></span>All Access
                 </div>
                 <div class="legend-item">
-                    <span class="legend-dot" style="background-color: #2196F3;"></span>
-                    Other
+                    <span class="legend-dot" style="background-color: #2196F3;"></span>Other
                 </div>
             </div>
         </p>
@@ -101,6 +85,7 @@
             let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
             let processedEventsData = {{ events | tojson }};
+
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
                 initialDate: '2023-11-01',
@@ -122,25 +107,28 @@
                 eventClick: function(info) {
                     // Prevent the browser from navigating to the event's url
                     info.jsEvent.preventDefault();
-                    
+
                     // Get the event details
                     var eventTitle = info.event.title;
-                    var eventDate = info.event.extendedProps.date;
+                    // TODO: Solve the mystery of the missing 'date' dictionary element
+                    // this should be info.event.extendedPropsd.date but for some reason
+                    // that value is always seen as 'undefined' in the code. No clue why! XD
+                    var eventDate = info.event.start; 
+                    var eventLocation = info.event.extendedProps.location
                     var eventTime = info.event.extendedProps.time;
                     var eventLink = info.event.extendedProps.link;
                     var eventAccess = info.event.extendedProps.access;
                     var eventDescription = info.event.extendedProps.description;
-                    var cleanedDescription = eventDescription.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
                     
-
                     // Create the HTML content for the event details
                     var eventDetailsHTML = `
                         <h2>${eventTitle}</h2>
-                        <h3>${eventDate} - ${eventTime}</h3>
+                        <h3>${eventDate}</h3>
+                        <h3>${eventLocation}</h3>
                         <strong>${eventAccess}</strong><br>
-                        <p>${cleanedDescription}</p>                       
+                        <p>${eventDescription}</p>                       
                     `;
-
+                                        
                     // Add the image only if it exists
                     if (info.event.extendedProps.image !== undefined && info.event.extendedProps.image !== null && info.event.extendedProps.image.trim() !== '') {
                         eventDetailsHTML += `<p><img src="${info.event.extendedProps.image}" style="width: 100%; height: auto; margin-bottom: 20px;" /></p>`;
@@ -155,18 +143,23 @@
                     var eventDetailsPanel = document.getElementById('event-details-panel');
                     eventDetailsPanel.innerHTML = eventDetailsHTML;
                     eventDetailsPanel.style.display = 'block';
-
-                    // You can style the panel with CSS to make it look as desired
-                    },
-                    eventDidMount: function(arg) {
-                        let val = selector.value;
-                        if (!(val == arg.event.extendedProps.access_id || val == "all")) {
-                            arg.el.style.display = "none";
-                        }
-                    },                    
-                    events: function (fetchInfo, successCallback, failureCallback) {
-                        successCallback(processedEventsData);
-                    }
+                },
+                eventDidMount: function(arg) {
+    let val = selector.value;
+    let access = arg.event.extendedProps.access;
+    
+    // Check if the selected value exists in the access array or if access is undefined
+    if (val === 'all' || (access && access.includes(val))) {
+        // Show the event
+        arg.el.style.display = 'block';
+    } else {
+        // Hide the event
+        arg.el.style.display = 'none';
+    }
+},           
+                events: function (fetchInfo, successCallback, failureCallback) {
+                    successCallback(processedEventsData);
+                }
             });
 
             calendar.render();
