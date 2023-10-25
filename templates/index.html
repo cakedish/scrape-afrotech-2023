@@ -78,19 +78,15 @@
                     <span class="legend-dot" style="background-color: #2196F3;"></span>Other
                 </div>
             </div>
-        </p>
+        </p>        
         <div id="calendar"></div>
-        <div id="event-details-panel" style="display: none;"><p></p></div>
+        <div id="event-details-panel" style="display: none;"></div>
         <script>
-            let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
-            let processedEventsData = {{ events | tojson }};
-
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
                 initialDate: '2023-11-01',
-                stickyHeaderDates: true,
-                height: 'auto',
+                // height: 'auto',
                 headerToolbar: {
                     "left": "prev,next today",
                     "center": "title",
@@ -107,28 +103,25 @@
                 eventClick: function(info) {
                     // Prevent the browser from navigating to the event's url
                     info.jsEvent.preventDefault();
-
+                    
                     // Get the event details
                     var eventTitle = info.event.title;
-                    // TODO: Solve the mystery of the missing 'date' dictionary element
-                    // this should be info.event.extendedPropsd.date but for some reason
-                    // that value is always seen as 'undefined' in the code. No clue why! XD
-                    var eventDate = info.event.start; 
-                    var eventLocation = info.event.extendedProps.location
+                    var eventDate = info.event.extendedProps.date;
                     var eventTime = info.event.extendedProps.time;
                     var eventLink = info.event.extendedProps.link;
                     var eventAccess = info.event.extendedProps.access;
                     var eventDescription = info.event.extendedProps.description;
+                    var cleanedDescription = eventDescription.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
                     
+
                     // Create the HTML content for the event details
                     var eventDetailsHTML = `
                         <h2>${eventTitle}</h2>
-                        <h3>${eventDate}</h3>
-                        <h3>${eventLocation}</h3>
+                        <h3>${eventDate} - ${eventTime}</h3>
                         <strong>${eventAccess}</strong><br>
-                        <p>${eventDescription}</p>                       
+                        <p>${cleanedDescription}</p>                       
                     `;
-                                        
+
                     // Add the image only if it exists
                     if (info.event.extendedProps.image !== undefined && info.event.extendedProps.image !== null && info.event.extendedProps.image.trim() !== '') {
                         eventDetailsHTML += `<p><img src="${info.event.extendedProps.image}" style="width: 100%; height: auto; margin-bottom: 20px;" /></p>`;
@@ -143,29 +136,13 @@
                     var eventDetailsPanel = document.getElementById('event-details-panel');
                     eventDetailsPanel.innerHTML = eventDetailsHTML;
                     eventDetailsPanel.style.display = 'block';
-                },
-                eventDidMount: function(arg) {
-    let val = selector.value;
-    let access = arg.event.extendedProps.access;
-    
-    // Check if the selected value exists in the access array or if access is undefined
-    if (val === 'all' || (access && access.includes(val))) {
-        // Show the event
-        arg.el.style.display = 'block';
-    } else {
-        // Hide the event
-        arg.el.style.display = 'none';
-    }
-},           
-                events: function (fetchInfo, successCallback, failureCallback) {
-                    successCallback(processedEventsData);
-                }
+
+                    // You can style the panel with CSS to make it look as desired
+                    },
+                    events: {{ events | tojson }},
             });
 
             calendar.render();
-            selector.addEventListener('change', function() {
-                calendar.refetchEvents();
-            });
         </script>
     </body>
 </html>
