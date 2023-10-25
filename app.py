@@ -8,8 +8,8 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     """Return the home page"""
-    events = bios.read("events_list.json")
-    return render_template("index.html", events=events)
+    events = bios.read("events.json")
+    return render_template("index.html.jinja", events=events)
 
 
 if __name__ == "__main__":

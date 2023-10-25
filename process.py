@@ -15,8 +15,7 @@ import determine_lowest_access
 HTML_DIRECTORY = "./downloads/"
 
 # Create a list and a dictionay to store events
-events_list = []
-events_dict = {}
+events = []
 
 # Iterate through the HTML files in the directory
 for filename in os.listdir(HTML_DIRECTORY):
@@ -115,11 +114,44 @@ for filename in os.listdir(HTML_DIRECTORY):
                 metadata_dict["date"], metadata_dict["time"]
             )
 
-            events_list.append(metadata_dict)
-            events_dict[event_id] = metadata_dict
+            events.append(metadata_dict)
 
         except (AttributeError, FileNotFoundError) as e:
             print(f"Error processing content from {filename}, Error: {str(e)}")
 
-bios.write("events_list.json", events_list)
-bios.write("events_dict.json", events_dict)
+# Process each event and store them in a list
+processed_events = []
+
+for event in events:
+    processed_event = {
+        "id": event["id"],
+        "title": event["title"],
+        "start": event["start"],
+        "end": event["end"],
+        "extendedProps": {
+            "description": event["description"],
+            "date": event["date"],
+            "time": event["time"],
+            "image": event["image"] if event.get("image") else False,
+            "link": event["link"] if event.get("link") else False,
+            "location": event["location"] if event.get("location") else False,
+        },
+    }
+
+    if event.get("access"):
+        processed_event["extendedProps"]["access"] = event["access"]
+
+        if "General Admission" in event["access"]:
+            processed_event["backgroundColor"] = "#4CAF50"
+        elif "Students" in event["access"]:
+            processed_event["backgroundColor"] = "orange"
+        elif "RSVP Required" in event["access"]:
+            processed_event["backgroundColor"] = "#F44336"
+        elif "All Access" in event["access"]:
+            processed_event["backgroundColor"] = "#FFD700"
+        else:
+            processed_event["backgroundColor"] = "#2196F3"
+
+    processed_events.append(processed_event)
+
+bios.write("events.json", processed_events)

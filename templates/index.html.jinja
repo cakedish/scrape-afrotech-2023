@@ -54,12 +54,14 @@
     
     </head>
     <body>
+<!--
         <select id="selector">
             <option value="all">Show all events</option>
             <option value="General Admission">General Admission</option>
             <option value="All Access">All Access</option>
             <option value="RSVP Required">RSVP Required</option>
         </select>        
+-->
         <p>
             <div class="legend">
                 <div class="legend-item">
@@ -104,14 +106,13 @@
                 eventClick: function(info) {
                     // Prevent the browser from navigating to the event's url
                     info.jsEvent.preventDefault();
-                    
-                    console.log(info.event)
 
                     // Get the event details
                     var eventTitle = info.event.title;
                     //var eventDate = info.event.extendedProps.date;
                     var eventDate = info.event.start; 
                     var eventTime = info.event.extendedProps.time;
+                    var eventImage = info.event.extendedProps.image;
                     var eventLink = info.event.extendedProps.link;
                     var eventAccess = info.event.extendedProps.access;
                     var eventLocation = info.event.extendedProps.location
@@ -127,12 +128,12 @@
                     `;
 
                     // Add the image only if it exists
-                    if (info.event.extendedProps.image !== undefined && info.event.extendedProps.image !== null && info.event.extendedProps.image.trim() !== '') {
-                        eventDetailsHTML += `<p><img src="${info.event.extendedProps.image}" style="width: 100%; height: auto; margin-bottom: 20px;" /></p>`;
+                    if (eventImage && eventImage !== undefined && eventImage !== null) {
+                        eventDetailsHTML += `<p><img src="${eventImage}" style="width: 100%; height: auto; margin-bottom: 20px;" /></p>`;
                     }
 
                     // Add the link only if it exists
-                    if (eventLink !== undefined && eventLink !== null && eventLink.trim() !== '') {
+                    if (eventLink !== undefined && eventLink !== null) {
                         eventDetailsHTML += `<p><a href="${eventLink}">Follow this link for more details or to RSVP</a></p>`;
                     }
 
@@ -140,13 +141,8 @@
                     var eventDetailsPanel = document.getElementById('event-details-panel');
                     eventDetailsPanel.innerHTML = eventDetailsHTML;
                     eventDetailsPanel.style.display = 'block';
-
-                    // You can style the panel with CSS to make it look as desired
-                    },
-                    
-                    events: {{ events | tojson }},
-
-
+                },
+                events: {{ events | tojson }},
             });
 
             calendar.render();
