@@ -104,22 +104,25 @@
                     // Prevent the browser from navigating to the event's url
                     info.jsEvent.preventDefault();
                     
+                    console.log(info.event)
+
                     // Get the event details
                     var eventTitle = info.event.title;
-                    var eventDate = info.event.extendedProps.date;
+                    //var eventDate = info.event.extendedProps.date;
+                    var eventDate = info.event.start; 
                     var eventTime = info.event.extendedProps.time;
                     var eventLink = info.event.extendedProps.link;
                     var eventAccess = info.event.extendedProps.access;
+                    var eventLocation = info.event.extendedProps.location
                     var eventDescription = info.event.extendedProps.description;
-                    var cleanedDescription = eventDescription.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
                     
-
                     // Create the HTML content for the event details
                     var eventDetailsHTML = `
                         <h2>${eventTitle}</h2>
-                        <h3>${eventDate} - ${eventTime}</h3>
+                        <h3>${eventDate}</h3>
+                        <h3>${eventLocation}</h3>
                         <strong>${eventAccess}</strong><br>
-                        <p>${cleanedDescription}</p>                       
+                        <p>${eventDescription}</p>                       
                     `;
 
                     // Add the image only if it exists
