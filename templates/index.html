@@ -82,6 +82,7 @@
         <div id="calendar"></div>
         <div id="event-details-panel" style="display: none;"></div>
         <script>
+            let selector = document.querySelector("#selector");
             let calendarEl = document.getElementById('calendar');
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'listWeek',
@@ -142,7 +143,10 @@
 
                     // You can style the panel with CSS to make it look as desired
                     },
+                    
                     events: {{ events | tojson }},
+
+
             });
 
             calendar.render();
