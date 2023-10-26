@@ -11,11 +11,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -66,8 +66,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -83,11 +83,11 @@
       "time": "2:00pm - 2:30pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -121,11 +121,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/logo-American-Express.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -141,11 +141,11 @@
       "time": "3:15pm - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -162,11 +162,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -219,8 +219,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -289,11 +289,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-LinkedIn.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -304,7 +304,7 @@
     "start": "2023-11-02T16:00:00",
     "end": "2023-11-02T21:00:00",
     "extendedProps": {
-      "description": "Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!  The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.\n\nThis is a great way to connect with folks during the conference, mix and mingle, and of course, make FRIENDS! Get ready for an electrifying block party, complete with NYC high-energy vibes right in the heart of Austin. Our DJ lineup is stacked with world-class talent. Playing the latest and greatest in tunes from Hip Hop, R&amp;B, AfroBeats, Dancehall and more!\n\nWe’ll have drinks flowing all night including our FRIEND-fav FUN Punch. And of course, we’ll have food on-hand to keep you nourished throughout the evening.\n\nSee you soon, Austin!",
+      "description": "Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.\n\nThis is a great way to connect with folks during the conference, mix and mingle, and of course, make FRIENDS! Get ready for an electrifying block party, complete with NYC high-energy vibes right in the heart of Austin. Our DJ lineup is stacked with world-class talent. Playing the latest and greatest in tunes from Hip Hop, R&amp;B, AfroBeats, Dancehall and more!\n\nWe’ll have drinks flowing all night including our FRIEND-fav FUN Punch. And of course, we’ll have food on-hand to keep you nourished throughout the evening.\n\nSee you soon, Austin!",
       "date": "2023-11-02",
       "time": "4:00pm - 9:00pm CST",
       "link": "https://www.eventbrite.com/e/fun-with-friends-block-party-afrotech-tickets-729759378947?aff=oddtdtcreator",
@@ -344,8 +344,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -391,11 +391,11 @@
       "time": "11:40am - 12:00pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -411,11 +411,11 @@
       "time": "1:00pm - 1:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -431,8 +431,8 @@
       "time": "9:00pm - 12:00am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "All Access",
-        "Add-On"
+        "Add-On",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -483,11 +483,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Bank-of-America.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -504,11 +504,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2022/09/1920px-Shopify_logo_2018.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -541,11 +541,11 @@
       "time": "1:30pm - 2:15pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -562,11 +562,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -720,11 +720,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/logo-Fund-II-Foundation.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -740,11 +740,11 @@
       "time": "12:30pm - 1:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -761,11 +761,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -782,8 +782,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -817,11 +817,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/CapitalOne-1.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -873,11 +873,11 @@
       "time": "9:45am - 10:15am CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -928,11 +928,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Meta-1.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -964,8 +964,8 @@
       "time": "9:00pm - 12:00am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "All Access",
-        "Add-On"
+        "Add-On",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -981,11 +981,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1020,11 +1020,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/logo-Office-of-the-Director-of-National-Intelligence-US-Intelligence-Community.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1058,8 +1058,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1076,11 +1076,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/Salesforce_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1096,11 +1096,11 @@
       "time": "9:00am - 5:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1116,11 +1116,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1153,11 +1153,11 @@
       "time": "3:15pm - 3:45pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1173,11 +1173,11 @@
       "time": "11:15am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1194,11 +1194,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/PwC_logo_mono_outline_white_rgb.jpg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1215,6 +1215,17 @@
     }
   },
   {
+    "id": "2585841",
+    "title": "The TEA on DEI: A conversation on Tech, Equity, and Advocacy",
+    "start": "2023-11-02T09:30:00",
+    "end": "2023-11-02T10:00:00",
+    "extendedProps": {
+      "description": "Join Jarvis Sam, for a discussion on the current state of diversity, equity and inclusion in tech and strategies that can foster systemic change across an organization. Jarvis will unpack steps on how everyone can accelerate any company&#x27;s DEI journey, from individual contributor to leadership, using a framework outlined in his new book, DEI C.R.E.D.E.N.T.I.A.L.  Jarvis SamChief Executive Officer and Founder - The Rainbow DisruptionJoshua PinkayBranded Editorial Production Manager - Blavity, Inc.",
+      "date": "2023-11-02",
+      "time": "9:30am - 10:00am CST"
+    }
+  },
+  {
     "id": "2561071",
     "title": "Product Equity - Designing for All",
     "start": "2023-11-02T09:30:00",
@@ -1225,11 +1236,11 @@
       "time": "9:30am - 9:45am CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1246,11 +1257,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2022/10/TwoSigma-1.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1279,11 +1290,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Wells-Fargo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1335,8 +1346,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1387,11 +1398,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1407,11 +1418,11 @@
       "time": "1:15pm - 2:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1428,11 +1439,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/Swift-Logo.png",
       "location": "Republic Square park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1519,11 +1530,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/ATW2020_ServiceNow_Logo_white.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1557,11 +1568,11 @@
       "time": "1:30pm - 2:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1594,11 +1605,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1615,11 +1626,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/Swift-Logo.png",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1635,11 +1646,11 @@
       "time": "3:30pm - 4:15pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1656,11 +1667,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Expedia-Group.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1694,11 +1705,11 @@
       "time": "11:40am - 12:00pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1715,11 +1726,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Morgan-Stanley.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1736,8 +1747,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1754,11 +1765,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Intuit.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1840,8 +1851,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1858,8 +1869,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1922,11 +1933,11 @@
       "time": "3:45pm - 4:15pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1960,11 +1971,11 @@
       "time": "1:45pm - 2:30pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1980,11 +1991,11 @@
       "time": "2:00pm - 2:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2001,8 +2012,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2019,8 +2030,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2037,11 +2048,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/logo-Prudential-Financial-INC.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2074,11 +2085,11 @@
       "time": "11:30am - 12:30pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2094,11 +2105,11 @@
       "time": "8:00am - 6:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2178,11 +2189,11 @@
       "time": "10:30am - 10:45am CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2198,11 +2209,11 @@
       "time": "10:45am - 11:15am CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2219,8 +2230,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2255,11 +2266,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/2000px-Mastercard-logo.svg.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2275,11 +2286,11 @@
       "time": "10:45am - 11:15am CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2399,11 +2410,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2497,11 +2508,11 @@
       "time": "2:15pm - 2:45pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2550,11 +2561,11 @@
       "time": "12:20pm - 12:40pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2571,11 +2582,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/apple.png",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2591,11 +2602,11 @@
       "time": "12:00pm - 12:20pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2628,11 +2639,11 @@
       "time": "10:45am - 11:30am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2699,11 +2710,11 @@
       "time": "11:15am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2720,11 +2731,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2757,11 +2768,11 @@
       "time": "3:00pm - 3:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2795,11 +2806,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/logo-Discover-2.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2815,11 +2826,11 @@
       "time": "12:30pm - 1:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2835,11 +2846,11 @@
       "time": "9:00am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2919,8 +2930,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3005,11 +3016,11 @@
       "time": "3:00pm - 3:30pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3043,11 +3054,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3080,11 +3091,11 @@
       "time": "9:00am - 9:30am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3100,11 +3111,11 @@
       "time": "12:00pm - 12:20pm CST",
       "location": "Republic Square Park",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3151,11 +3162,11 @@
       "time": "3:30pm - 4:30pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3206,8 +3217,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3259,8 +3270,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3311,11 +3322,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/Microsoft-logo_cmyk_c-gray-copy.svg",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3332,8 +3343,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3378,8 +3389,8 @@
       "location": "Hilton Austin",
       "access": [
         "Executive",
-        "All Access",
-        "Corporate"
+        "Corporate",
+        "All Access"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3395,11 +3406,11 @@
       "time": "3:30pm - 4:30pm CST",
       "location": "Austin Convention Center",
       "access": [
+        "Executive",
         "All Access",
-        "Corporate",
-        "General Admission",
         "Students",
-        "Executive"
+        "Corporate",
+        "General Admission"
       ]
     },
     "backgroundColor": "#4CAF50"
