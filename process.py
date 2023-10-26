@@ -136,13 +136,13 @@ for event in events:
     }
     
     if event.get("image"):
-        "image": event["image"]
+        processed_event["extendedProps"]["image"] = event["image"]
     
     if event.get("link"):
-        "image": event["link"]
+        processed_event["extendedProps"]["link"] = event["link"]
 
     if event.get("location"):
-        "image": event["location"]
+        processed_event["extendedProps"]["location"] = event["location"]
     
     if event.get("access"):
         processed_event["extendedProps"]["access"] = event["access"]
