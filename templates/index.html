@@ -108,6 +108,7 @@
                     info.jsEvent.preventDefault();
 
                     // Get the event details
+                    var eventId = info.event.id;
                     var eventTitle = info.event.title;
                     //var eventDate = info.event.extendedProps.date;
                     var eventDate = info.event.start; 
@@ -127,14 +128,17 @@
                         <p>${eventDescription}</p>                       
                     `;
 
+                    // Add the event link
+                    eventDetailsHTML += `<p><a href="https://experience.afrotech.com/afrotech-schedule/#poster-${eventId}" target="_blank">Follow this link to see the official event listing</a></p>`;
+
+                    // Add the RSVP link only if it exists
+                    if (eventLink !== undefined && eventLink !== null) {
+                        eventDetailsHTML += `<p><a href="${eventLink}" target="_blank">Follow this link for more details or to RSVP</a></p>`;
+                    }
+
                     // Add the image only if it exists
                     if (eventImage && eventImage !== undefined && eventImage !== null) {
                         eventDetailsHTML += `<p><img src="${eventImage}" style="width: 100%; height: auto; margin-bottom: 20px;" /></p>`;
-                    }
-
-                    // Add the link only if it exists
-                    if (eventLink !== undefined && eventLink !== null) {
-                        eventDetailsHTML += `<p><a href="${eventLink}">Follow this link for more details or to RSVP</a></p>`;
                     }
 
                     // Update the panel with the event details and show it

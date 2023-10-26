@@ -13,7 +13,7 @@ events = bios.read("events.json")
 env = Environment(loader=FileSystemLoader("templates"))
 
 # Load the template for event processing
-event_template = env.get_template("index.html.jinja")
+event_template = env.get_template("index.html")
 
 # Render the template with the  events; '| tojson' is applied in the template
 rendered_template = event_template.render(events=events)
