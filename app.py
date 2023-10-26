@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     """Return the home page"""
     events = bios.read("events.json")
-    return render_template("index.html.jinja", events=events)
+    return render_template("index.html", events=events)
 
 
 if __name__ == "__main__":
