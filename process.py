@@ -134,16 +134,16 @@ for event in events:
             "time": event["time"],
         },
     }
-    
+
     if event.get("image"):
         processed_event["extendedProps"]["image"] = event["image"]
-    
+
     if event.get("link"):
         processed_event["extendedProps"]["link"] = event["link"]
 
     if event.get("location"):
         processed_event["extendedProps"]["location"] = event["location"]
-    
+
     if event.get("access"):
         processed_event["extendedProps"]["access"] = event["access"]
 
