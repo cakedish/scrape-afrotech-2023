@@ -132,12 +132,18 @@ for event in events:
             "description": event["description"],
             "date": event["date"],
             "time": event["time"],
-            "image": event["image"] if event.get("image") else False,
-            "link": event["link"] if event.get("link") else False,
-            "location": event["location"] if event.get("location") else False,
         },
     }
+    
+    if event.get("image"):
+        "image": event["image"]
+    
+    if event.get("link"):
+        "image": event["link"]
 
+    if event.get("location"):
+        "image": event["location"]
+    
     if event.get("access"):
         processed_event["extendedProps"]["access"] = event["access"]
 
