@@ -18,6 +18,10 @@
                 padding: 20px;
                 z-index: 1000;
             }
+            
+            .fc .fc-toolbar {
+                align-items: unset;
+            }
 
             /* Style the legend container */
             .legend {
@@ -64,6 +68,7 @@
         </select>        
         -->
         <p>
+        <div class="legend-container">
             A Very Unofficial Afrotech Calendar<br/>
             <div class="legend">
                 <div class="legend-item">
@@ -82,6 +87,8 @@
                     <span class="legend-dot" style="background-color: #2196F3;"></span>Other
                 </div>
             </div>
+        </div>
+
         </p>        
         <div id="calendar"></div>
         <div id="event-details-panel" style="display: none;"></div>
