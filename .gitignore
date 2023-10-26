@@ -163,3 +163,4 @@ events_list.json
 *.deb
 *.zip
 *.swp
+.vscode/
