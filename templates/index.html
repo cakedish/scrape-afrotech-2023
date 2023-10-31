@@ -91,7 +91,7 @@
                 </div>
             </div>
         </nav>
-        </p>
+        <p></p>
         <div class="container" id="calendar"></div>
         <div class="container" id="event-details-panel" style="display: none;"></div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -166,6 +166,12 @@
             calendar.render();
         </script>
         <h1 style="display: none;">An Unofficial Afrotech Calendar | Use this calendar as a reference to the events taking place during Afrotech 2023</h1>
+        <div class="container" id="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/30d27n97d74/austin/?unit=us" data-label_1="AUSTIN" data-label_2="WEATHER" data-theme="dark" >AUSTIN WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
         <footer class="container navbar navbar-light bg-light mt-5">
             <div class="footer-content">
                 <div class="footer-links">
