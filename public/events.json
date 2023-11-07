@@ -11,11 +11,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -31,8 +31,8 @@
       "time": "10:30am - 11:00am CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -65,9 +65,9 @@
       "time": "10:00am - 10:15am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -83,11 +83,11 @@
       "time": "2:00pm - 2:30pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -103,8 +103,8 @@
       "time": "10:00am - 10:30am CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -115,17 +115,17 @@
     "start": "2023-11-03T11:00:00",
     "end": "2023-11-03T11:30:00",
     "extendedProps": {
-      "description": "From the innate drive to succeed against all odds to the struggle to maintain your identity in a homogeneous environment, the journey of a startup company on its path to acquisition (and beyond) is very familiar to most black technology professionals. Understanding the synergy between these two experiences and the lessons learned from industry pioneers who have navigated both journeys can provide a competitive advantage for any black tech innovator looking to succeed in the world of startups, venture capital, or mergers and acquisitions. Senior executives from American Express with personal experiences in all phases of the journey from the startup and VC ecosystem to a large corporate enterprise will share their stories, best practices, and actionable steps to success.Tony JacksonChief Technology Officer - Resy, American Express Global DiningGary KenseySenior Vice President and Unit CIO for Global Services Group &amp; Corporate Technology - American ExpressOpe RunseweHead of Business Development - American Express Ventures",
+      "description": "The journey from startup to acquisition is never easy. The innovation landscape is littered with landmines for entrepreneurs, venture capital investors and corporate technology professionals alike. In this panel, senior executives from American Express and Resy will share personal experiences and lessons they’ve learned along the way as black tech innovators in both small and large companies to help other technologists to successfully approach challenges like managing growth, acquisitions, integration and nurturing a culture of diversity and inclusion.Tony JacksonChief Technology Officer - Resy, American Express Global DiningGary KenseySenior Vice President and Unit CIO for Global Services Group &amp; Corporate Technology - American ExpressOpe RunseweHead of Business Development - American Express Ventures",
       "date": "2023-11-03",
       "time": "11:00am - 11:30am CST",
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/logo-American-Express.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -133,19 +133,19 @@
   {
     "id": "2561056",
     "title": "SPILLing the Tea: Centering Culture Creators with Co-Founder Phonz",
-    "start": "2023-11-02T15:15:00",
+    "start": "2023-11-02T15:30:00",
     "end": "2023-11-02T16:00:00",
     "extendedProps": {
-      "description": "If the emergence of Black-owned music labels changed the game for hip hop, SPILL, the next Black-owned social media app, will do the same for social. The visual conversation app that is the de facto place to discuss and discover culture aspires to be the first unicorn Black-owned social media app. Utilizing large language model AI and new technology, Spill aims to recognize and reward the culture drivers, often the marginalized voices that determine a platform’s relevance early on, to create a thriving creator and advertiser ecosystem. Phonz can share more about SPILL&#x27;s origin story and his vision for the future with guests Maya Watson &amp; Jeffery Wallace.Alphonzo TerrellChief Executive Officer &amp; Co-Founder - SpillMaya WatsonCo-founder &amp; Chief Executive Officer - ManualJeffery WallacePresident &amp; Chief Executive Officer - LeadersUp",
+      "description": "If the emergence of Black-owned music labels changed the game for hip hop, SPILL, the next Black-owned social media app, will do the same for social. The visual conversation app that is the de facto place to discuss and discover culture aspires to be the first unicorn Black-owned social media app. Utilizing large language model AI and new technology, Spill aims to recognize and reward the culture drivers, often the marginalized voices that determine a platform’s relevance early on, to create a thriving creator and advertiser ecosystem. Phonz can share more about SPILL&#x27;s origin story and his vision for the future with guest Jeffery Wallace.Alphonzo TerrellChief Executive Officer &amp; Co-Founder - SpillJeffery WallacePresident &amp; Chief Executive Officer - LeadersUp",
       "date": "2023-11-02",
-      "time": "3:15pm - 4:00pm CST",
+      "time": "3:30pm - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -162,11 +162,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -200,8 +200,8 @@
       "time": "9:00am - 9:30am CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -218,9 +218,9 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2022/10/GapInc.png",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -244,7 +244,7 @@
   },
   {
     "id": "2561712",
-    "title": "The Fade Day Party | Official Entertainment Partner",
+    "title": "Toasted Life Presents The Fade Day Party | Official Entertainment Partner",
     "start": "2023-11-03T17:00:00",
     "end": "2023-11-03T21:00:00",
     "extendedProps": {
@@ -289,11 +289,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-LinkedIn.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -304,7 +304,7 @@
     "start": "2023-11-02T16:00:00",
     "end": "2023-11-02T21:00:00",
     "extendedProps": {
-      "description": "Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.\n\nThis is a great way to connect with folks during the conference, mix and mingle, and of course, make FRIENDS! Get ready for an electrifying block party, complete with NYC high-energy vibes right in the heart of Austin. Our DJ lineup is stacked with world-class talent. Playing the latest and greatest in tunes from Hip Hop, R&amp;B, AfroBeats, Dancehall and more!\n\nWe’ll have drinks flowing all night including our FRIEND-fav FUN Punch. And of course, we’ll have food on-hand to keep you nourished throughout the evening.\n\nSee you soon, Austin!",
+      "description": "Yee-haw!!! 🤠 The Lone Star State is about to experience a FUN-filled takeover like never before!  The FUN is riding into town on November 2. We’re pulling up as an official event activation for AfroTech 2023. Meet us at the Garden at Inn Cahoots from 5 -11p.m., as we transform this space into our very own playground.\n\nThis is a great way to connect with folks during the conference, mix and mingle, and of course, make FRIENDS! Get ready for an electrifying block party, complete with NYC high-energy vibes right in the heart of Austin. Our DJ lineup is stacked with world-class talent. Playing the latest and greatest in tunes from Hip Hop, R&amp;B, AfroBeats, Dancehall and more!\n\nWe’ll have drinks flowing all night including our FRIEND-fav FUN Punch. And of course, we’ll have food on-hand to keep you nourished throughout the evening.\n\nSee you soon, Austin!",
       "date": "2023-11-02",
       "time": "4:00pm - 9:00pm CST",
       "link": "https://www.eventbrite.com/e/fun-with-friends-block-party-afrotech-tickets-729759378947?aff=oddtdtcreator",
@@ -343,9 +343,9 @@
       "time": "10:45am - 11:00am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -391,11 +391,11 @@
       "time": "11:40am - 12:00pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -403,19 +403,19 @@
   {
     "id": "2561573",
     "title": "World Builders: The New Storytelling Frontier",
-    "start": "2023-11-03T13:00:00",
+    "start": "2023-11-03T13:15:00",
     "end": "2023-11-03T13:45:00",
     "extendedProps": {
-      "description": "Join us for a captivating session exploring how animation is revolutionizing storytelling. From mixed media to animated films, we&#x27;ll delve into innovative techniques and technologies that are reshaping narratives. Gain insights from industry experts and get inspired to incorporate animation into your creative projects. Don&#x27;t miss this opportunity to be part of the animation storytelling revolution!dream hamptonAward-Winning Filmmaker - Chaz BottomsDirector, Story Artist, Writer and Founder - CBA StudiosDawn RichardDirector Artist Relations / Creative And Cultural Producer - Hip Hop Caucus",
+      "description": "Join us for a captivating session exploring how animation is revolutionizing storytelling. From mixed media to animated films, we&#x27;ll delve into innovative techniques and technologies that are reshaping narratives. Gain insights from industry experts and get inspired to incorporate animation into your creative projects. Don&#x27;t miss this opportunity to be part of the animation storytelling revolution!Chaz BottomsDirector, Story Artist, Writer and Founder - CBA StudiosDawn RichardDirector Artist Relations / Creative And Cultural Producer - Hip Hop Caucus",
       "date": "2023-11-03",
-      "time": "1:00pm - 1:45pm CST",
+      "time": "1:15pm - 1:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -426,13 +426,13 @@
     "start": "2023-11-03T21:00:00",
     "end": "2023-11-03T00:00:00",
     "extendedProps": {
-      "description": "Ignite the night with a fusion of Afrobeats and Dancehall in an electrifying showcase of musical talent. \n\nGet ready to embark on a mesmerizing musical journey as we bring you the electrifying sounds of Pheelz, the soulful melodies of Lord Afrixana, and the rhythms of Teejay, all in one unforgettable night.  \n\nA movement, a celebration, and a vibe you won&#x27;t want to miss.",
+      "description": "Ignite the night with a fusion of Afrobeats and Dancehall in an electrifying showcase of musical talent. \n\nFeaturing sounds from Pheelz, mixes by Dj Stakz, the soulful melodies of Lord Afrixana, and the rhythms of Teejay, all in one unforgettable night.  \n\nA movement, a celebration, and a vibe you won&#x27;t want to miss.",
       "date": "2023-11-03",
       "time": "9:00pm - 12:00am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Add-On",
-        "All Access"
+        "All Access",
+        "Add-On"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -483,11 +483,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Bank-of-America.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -504,14 +504,31 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2022/09/1920px-Shopify_logo_2018.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
+  },
+  {
+    "id": "2587376",
+    "title": "The Close Out: High Energy Turn Up| Featuring K Camp | Official Event Partner",
+    "start": "2023-11-04T22:00:00",
+    "end": "2023-11-04T02:00:00",
+    "extendedProps": {
+      "description": "THE CLOSE OUT!!!\nBlavity House Party is bringing the TRUNT UP CLUB BOTTLE POPPING EXPERIENCE TO AFROTECH 2023!!\n\nReserve your section ASAP and let&#x27;s go crazyyyy!!!\n\nH﻿osted by: Charles Beloved &amp; Dajon Alford\n\nD﻿J sets by: Jae Murphy | DJ NP3 | Yannick Jones\n\nF﻿eaturing: K CAMP!!!\n\nC﻿omplimentary Tito&#x27;s Handmade Vodka Cocktails while supplies last!",
+      "date": "2023-11-04",
+      "time": "10:00pm - 2:00am CST",
+      "link": "https://www.eventbrite.com/e/the-close-out-high-energy-turn-up-featuring-k-camp-tickets-718695496577?aff=oddtdtcreator",
+      "location": "The Venue ATX",
+      "access": [
+        "RSVP Required"
+      ]
+    },
+    "backgroundColor": "#F44336"
   },
   {
     "id": "2561289",
@@ -524,8 +541,8 @@
       "time": "1:30pm - 2:00pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -541,11 +558,11 @@
       "time": "1:30pm - 2:15pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -556,17 +573,17 @@
     "start": "2023-11-03T13:00:00",
     "end": "2023-11-03T15:00:00",
     "extendedProps": {
-      "description": "Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: SolaceFireside chat: Using the Power of Storytelling to Tackle Mental Illness in the Black CommunityTchaiko OmawaleFilm Director of Solace -",
+      "description": "Movies &amp; Mimosas will feature award-winning films, lively fireside chats featuring Black creators exploring the intersection of tech, animation, sci-fi, AI, social justice and AfroFuturism in filmmaking–all while sipping mimosas.  Screen: SolaceFireside chat: Using the Power of Storytelling to Tackle Mental Illness in the Black Community",
       "date": "2023-11-03",
       "time": "1:00pm - 3:00pm CST",
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -590,12 +607,12 @@
   {
     "id": "2561718",
     "title": "CHOP LIFE: AFROTECH &amp; AFROBEATS | Official Entertainment Partner",
-    "start": "2023-11-04T15:00:00",
-    "end": "2023-11-04T22:00:00",
+    "start": "2023-11-04T18:00:00",
+    "end": "2023-11-04T02:00:00",
     "extendedProps": {
       "description": "CHOP LIFE GLOBAL curates intentional experiences designed to uplift and unify The Diaspora.",
       "date": "2023-11-04",
-      "time": "3:00pm - 10:00pm CST",
+      "time": "6:00pm - 2:00am CST",
       "link": "https://www.eventbrite.com/e/chop-life-afrotech-afrobeats-austin-texas-tickets-717659407607?utm_source=eventbrite&utm_medium=email&utm_content=follow_notification&utm_campaign=following_published_event&utm_term=CHOP+LIFE%3A+AFROTECH+%26+AFROBEATS+%28Austin%2C+Texas%29&aff=ebemoffollowpublishemail",
       "location": "Summit Lounge",
       "access": [
@@ -657,12 +674,29 @@
     "backgroundColor": "#F44336"
   },
   {
+    "id": "2561005",
+    "title": "Concrete Connections Presented by Black Product Managers | Official Sponsor Event",
+    "start": "2023-11-01T19:00:00",
+    "end": "2023-11-01T20:30:00",
+    "extendedProps": {
+      "description": "Concrete Connections is a collaborative initiative comprising five partner organizations: ColorWave, ColorStack, BPM, DevColor, and GoodNation, all under the umbrella of the Concrete Rose Foundation. Our mission is to empower Black talent by facilitating access to peer networks, social capital, and knowledge, thereby accelerating learning, nurturing potential, and fostering career advancement. We are excited to meet you all at our event at AfroTech, where we aim to combine enjoyment and networking into a single, memorable experience. Join us for a fun-filled occasion that offers a unique opportunity to connect with a brilliant group of individuals.",
+      "date": "2023-11-01",
+      "time": "7:00pm - 8:30pm CST",
+      "link": "https://concreteconnectionsconncopy.splashthat.com/",
+      "location": "Hotel Van Zandt",
+      "access": [
+        "RSVP Required"
+      ]
+    },
+    "backgroundColor": "#F44336"
+  },
+  {
     "id": "2561662",
-    "title": "Engineering Meet-up | Presented By Wing",
+    "title": "Engineering Meet-up &amp; Tech Talk | Presented By Wing",
     "start": "2023-11-03T14:30:00",
     "end": "2023-11-03T16:00:00",
     "extendedProps": {
-      "description": "The Engineering Meeting is a dynamic gathering of professionals from various backgrounds within the tech industry. This event offers a supportive environment for attendees to connect, network, and foster meaningful relationships. Engage in insightful conversations, learn from experienced peers, expand professional connections, gain valuable insights and establish meaningful connections within the engineering community.\n\n\nThis event is open to AFROTECH™ Conference attendees only and is first come, first serve based on capacity.",
+      "description": "Join us for an exhilarating journey into the world of drone delivery! During the Engineering Meet-up, Wing Software Engineers Lemi Eba and Bankole Oluwole will host a tech talk, &quot;A Day in the Life of a Wing Engineer,&quot; which will immerse you in the dynamic realm of aviation innovation. Engage with the Wing team as they share their experiences, insights, and groundbreaking projects. Whether you&#x27;re a tech enthusiast, aspiring engineer, or simply curious about autonomous drone delivery, this talk will provide a deep dive into cutting-edge technology that is shaping the future of the last mile delivery industry.\nThis event is open to AFROTECH™ Conference attendees only and is first come, first serve based on capacity.Lemi EbaSoftware Engineer - WingBankole OluwoleSoftware Engineer - Wing",
       "date": "2023-11-03",
       "time": "2:30pm - 4:00pm CST",
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/WingAviationLLC.svg",
@@ -702,8 +736,8 @@
       "time": "1:00pm - 1:30pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -720,11 +754,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/logo-Fund-II-Foundation.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -740,11 +774,11 @@
       "time": "12:30pm - 1:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -761,11 +795,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -781,9 +815,9 @@
       "time": "11:30am - 12:00pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -811,17 +845,17 @@
     "start": "2023-11-02T15:00:00",
     "end": "2023-11-02T16:00:00",
     "extendedProps": {
-      "description": "Each one of us has the potential and power to innovate in big ways, but innovation is not born in a vacuum. We have to build the right environment and muscle so that we’re equipped to innovate, allowing us to do our highest value work. This talk will review the three foundational elements to set the stage to innovate: Support, Space &amp; Structure - attendees will walk away with practical advice on how to create an environment ripe for innovation.",
+      "description": "Each one of us has the potential and power to innovate in big ways, but innovation is not born in a vacuum. We have to build the right environment and muscle so that we’re equipped to innovate, allowing us to do our highest value work. This talk will review the three foundational elements to set the stage to innovate: Support, Space &amp; Structure - attendees will walk away with practical advice on how to create an environment ripe for innovation.Kimberly HallVP, Technical Program Management - Capital OneEmmanuel; OffiongVP, Software Engineering - Capital OneAwah TehVP, Data Governance &amp; Privacy Engineering - Capital One",
       "date": "2023-11-02",
       "time": "3:00pm - 4:00pm CST",
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/CapitalOne-1.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -873,11 +907,11 @@
       "time": "9:45am - 10:15am CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -910,8 +944,8 @@
       "time": "1:15pm - 2:00pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -928,11 +962,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Meta-1.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -943,10 +977,11 @@
     "start": "2023-11-04T22:00:00",
     "end": "2023-11-04T02:00:00",
     "extendedProps": {
-      "description": "No description available",
+      "description": "Afrolituation is Billboard&#x27;s No 1 Afrobeats Experience party in the US that celebrates Africa through its music, fashion and food. Come and celebrate culture with great people &amp; awesome vibes!",
       "date": "2023-11-04",
       "time": "10:00pm - 2:00am CST",
       "link": "https://events.eventnoire.com/e/afrolituationxafrotech",
+      "location": "Superstition",
       "access": [
         "RSVP Required"
       ]
@@ -964,8 +999,8 @@
       "time": "9:00pm - 12:00am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Add-On",
-        "All Access"
+        "All Access",
+        "Add-On"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -981,11 +1016,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1020,11 +1055,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/logo-Office-of-the-Director-of-National-Intelligence-US-Intelligence-Community.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1057,9 +1092,9 @@
       "time": "10:30am - 10:45am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1076,11 +1111,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/Salesforce_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1096,11 +1131,31 @@
       "time": "9:00am - 5:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
+      ]
+    },
+    "backgroundColor": "#4CAF50"
+  },
+  {
+    "id": "2561070",
+    "title": "When We all Vote: A Conversation with Marsai Martin",
+    "start": "2023-11-02T16:30:00",
+    "end": "2023-11-02T17:00:00",
+    "extendedProps": {
+      "description": "Join us for an enlightening fireside conversation as we delve into the heart of civic engagement and social change with none other than the remarkable Marsai Martin.Sylvia ObellJournalist - Marsai MartinActress, Producer, &amp; When We All Vote Ambassador. -",
+      "date": "2023-11-02",
+      "time": "4:30pm - 5:00pm CST",
+      "location": "ACL Live at Moody Theater",
+      "access": [
+        "General Admission",
+        "All Access",
+        "Corporate",
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1116,11 +1171,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1153,11 +1208,11 @@
       "time": "3:15pm - 3:45pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1173,11 +1228,11 @@
       "time": "11:15am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1194,11 +1249,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/PwC_logo_mono_outline_white_rgb.jpg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1222,8 +1277,17 @@
     "extendedProps": {
       "description": "Join Jarvis Sam, for a discussion on the current state of diversity, equity and inclusion in tech and strategies that can foster systemic change across an organization. Jarvis will unpack steps on how everyone can accelerate any company&#x27;s DEI journey, from individual contributor to leadership, using a framework outlined in his new book, DEI C.R.E.D.E.N.T.I.A.L.  Jarvis SamChief Executive Officer and Founder - The Rainbow DisruptionJoshua PinkayBranded Editorial Production Manager - Blavity, Inc.",
       "date": "2023-11-02",
-      "time": "9:30am - 10:00am CST"
-    }
+      "time": "9:30am - 10:00am CST",
+      "location": "Austin Convention Center",
+      "access": [
+        "General Admission",
+        "All Access",
+        "Corporate",
+        "Executive",
+        "Students"
+      ]
+    },
+    "backgroundColor": "#4CAF50"
   },
   {
     "id": "2561071",
@@ -1236,11 +1300,11 @@
       "time": "9:30am - 9:45am CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1257,11 +1321,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2022/10/TwoSigma-1.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1290,11 +1354,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Wells-Fargo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1345,9 +1409,9 @@
       "time": "11:00am - 11:30am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1380,8 +1444,8 @@
       "time": "10:30am - 11:00am CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1398,11 +1462,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1418,11 +1482,11 @@
       "time": "1:15pm - 2:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1439,11 +1503,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/Swift-Logo.png",
       "location": "Republic Square park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1530,11 +1594,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/ATW2020_ServiceNow_Logo_white.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1568,11 +1632,11 @@
       "time": "1:30pm - 2:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1605,11 +1669,11 @@
       "time": "10:00am - 4:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1626,11 +1690,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/Swift-Logo.png",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1646,11 +1710,11 @@
       "time": "3:30pm - 4:15pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1667,14 +1731,31 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Expedia-Group.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
+  },
+  {
+    "id": "2587375",
+    "title": "So Anxious: RNB Slow Jamz Party Featuring Ginuwine | Official Event Partner",
+    "start": "2023-11-03T22:00:00",
+    "end": "2023-11-03T02:00:00",
+    "extendedProps": {
+      "description": "Blavity House Party is bringing the RNBHouseParty Slow Jamz BOTTLE POPPING CLUB EXPERIENCE TO AFROTECH 2023!!\n\nReserve your section ASAP and let&#x27;s go crazyyyy!!!\n\nH﻿osted by: Charles Beloved &amp; Dajon Alford\n\nD﻿J sets by: DJ NP3 and Yannick Jones\n\nF﻿eaturing: Ginuwine AND ALL OF THE HITS!!!\n\nC﻿omplimentary Tito&#x27;s Handmade Vodka Cocktails while supplies last!",
+      "date": "2023-11-03",
+      "time": "10:00pm - 2:00am CST",
+      "link": "https://www.eventbrite.com/e/so-anxious-rnb-slow-jamz-party-featuring-ginuwine-tickets-715633498057?aff=oddtdtcreator",
+      "location": "The Venue ATX",
+      "access": [
+        "RSVP Required"
+      ]
+    },
+    "backgroundColor": "#F44336"
   },
   {
     "id": "2561381",
@@ -1705,11 +1786,11 @@
       "time": "11:40am - 12:00pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1726,11 +1807,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Morgan-Stanley.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1746,9 +1827,9 @@
       "time": "12:15pm - 1:00pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1765,11 +1846,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/08/logo-Intuit.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1816,8 +1897,8 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/Lam_Research_logo_White-1.png",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1842,17 +1923,17 @@
   {
     "id": "2561315",
     "title": "Sports Summit | What&#x27;s the Plan for Global Gaming?",
-    "start": "2023-11-02T14:45:00",
-    "end": "2023-11-02T15:15:00",
+    "start": "2023-11-02T15:15:00",
+    "end": "2023-11-02T15:45:00",
     "extendedProps": {
       "description": "Join us for an enlightening fireside conversation as we explore the future strategies and directions that are shaping the dynamic global gaming landscape. Our moderator, Nicole LaPointe Jameson, CEO of Evil Geniuses, a renowned esports brand, will lead the discussion alongside Leo Olebe, Global Head of Gaming at YouTube. Together, they will share insights and perspectives on the evolving gaming industry, its impact, and the exciting possibilities it holds for the future.Access to the Summit Stage requires a Corporate, Executive or All Access Badge. Secure or upgrade your ticket today!Sports Summit Presented by Blavity Media GroupLeo OlebeGlobal Head of Gaming - YouTubeNicole LaPointe JamesonCEO - Evil Geniuses",
       "date": "2023-11-02",
-      "time": "2:45pm - 3:15pm CST",
+      "time": "3:15pm - 3:45pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1868,9 +1949,9 @@
       "time": "3:30pm - 4:15pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1894,7 +1975,7 @@
   },
   {
     "id": "2584295",
-    "title": "CrowdStrike &amp; Chill | Official Sponsor Event",
+    "title": "Connect with CrowdStrike | Official Sponsor Event",
     "start": "2023-11-04T10:00:00",
     "end": "2023-11-04T12:00:00",
     "extendedProps": {
@@ -1906,18 +1987,38 @@
     }
   },
   {
+    "id": "2561543",
+    "title": "Book Signing with Freada &amp; Mitch Kapor",
+    "start": "2023-11-03T11:00:00",
+    "end": "2023-11-03T11:30:00",
+    "extendedProps": {
+      "description": "Meet Freada &amp; Mitch Kapor and get a signed copy of their newest book: Closing the Equity Gap: Creating Wealth and Fostering Justice in Startup Investing.",
+      "date": "2023-11-03",
+      "time": "11:00am - 11:30am CST",
+      "location": "Austin Convention Center",
+      "access": [
+        "General Admission",
+        "All Access",
+        "Corporate",
+        "Executive",
+        "Students"
+      ]
+    },
+    "backgroundColor": "#4CAF50"
+  },
+  {
     "id": "2561299",
     "title": "The Kaleidoscope Effect: Redefining Boardrooms",
     "start": "2023-11-02T15:45:00",
     "end": "2023-11-02T16:15:00",
     "extendedProps": {
-      "description": "Join us for an illuminating fireside session that explores how the infusion of diverse perspectives invigorates boardrooms, weaving a dynamic tapestry of redefinition across the business landscape. Led by Moderator Tamara Fields, Austin Office Managing Director and South Market Unit Director of Operations at Accenture, alongside panelist Samuel Bright, Vice President &amp; General Manager of Google Play, we&#x27;ll uncover how fresh insights from varied backgrounds reshape business narratives, guided by decades of collective expertise.Access to the Executive Stage requires an Executive or All Access Badge Secure or upgrade your ticket today!Sam BrightVice President &amp; General Manager - Google PlayTamara FieldsAustin Office Managing Director | South Market Unit Director of Operations - Accenture",
+      "description": "Join us for an illuminating fireside session that explores how the infusion of diverse perspectives invigorates boardrooms, weaving a dynamic tapestry of redefinition across the business landscape. Led by Moderator Kelly Buchanan Spillers, Strategic Marketing Executive, alongside panelist Samuel Bright, Vice President &amp; General Manager of Google Play, we&#x27;ll uncover how fresh insights from varied backgrounds reshape business narratives, guided by decades of collective expertise.\nSam BrightVice President &amp; General Manager - Google PlayKelly Buchanan SpillersChief Marketing Officer -",
       "date": "2023-11-02",
       "time": "3:45pm - 4:15pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -1933,11 +2034,11 @@
       "time": "3:45pm - 4:15pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1971,11 +2072,11 @@
       "time": "1:45pm - 2:30pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -1991,11 +2092,11 @@
       "time": "2:00pm - 2:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2011,9 +2112,9 @@
       "time": "9:00am - 9:30am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2029,9 +2130,9 @@
       "time": "12:30pm - 1:00pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2048,11 +2149,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/07/logo-Prudential-Financial-INC.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2085,11 +2186,11 @@
       "time": "11:30am - 12:30pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2105,11 +2206,11 @@
       "time": "8:00am - 6:00pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2189,11 +2290,11 @@
       "time": "10:30am - 10:45am CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2209,11 +2310,11 @@
       "time": "10:45am - 11:15am CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2229,9 +2330,9 @@
       "time": "1:15pm - 1:30pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2260,17 +2361,17 @@
     "start": "2023-11-02T13:45:00",
     "end": "2023-11-02T14:45:00",
     "extendedProps": {
-      "description": "No description available",
+      "description": "Success begins with access. Join Mastercard Les Matthews, EVP of North America Services at Mastercard and Mr. John Hope Bryant, Founder, Chairman and CEO of Operation HOPE, Inc. as they dive into the power of access and the role it plays in driving financial access for all. This discussion will explore the innovative strategies, technology, resources and actions individuals can take to change their mindset, foster positive change in their communities and establish financial freedom.Les MatthewsExecutive Vice President of Services, North America - MastercardJohn Hope BryantFounder, Chairman and CEO - Operation HOPE, Inc.",
       "date": "2023-11-02",
       "time": "1:45pm - 2:45pm CST",
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/2000px-Mastercard-logo.svg.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2286,11 +2387,11 @@
       "time": "10:45am - 11:15am CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2391,7 +2492,7 @@
       "date": "2023-11-03",
       "time": "9:00pm - 2:00am CST",
       "link": "https://www.eventbrite.com/e/caviar-and-collard-greens-afrotech-tickets-726869685797?aff=oddtdtcreator",
-      "location": "800 Congress",
+      "location": "Skybox ATX",
       "access": [
         "RSVP Required"
       ]
@@ -2410,11 +2511,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2498,6 +2599,27 @@
     "backgroundColor": "#F44336"
   },
   {
+    "id": "2561561",
+    "title": "McDonald&#x27;s Black &amp; Positively Golden Change Leaders: Conversations | Presented by McDonald&#x27;s",
+    "start": "2023-11-03T12:20:00",
+    "end": "2023-11-03T13:05:00",
+    "extendedProps": {
+      "description": "Ten young, Black trailblazers started initiatives to make a change in their communities. All year long, McDonald’s is supporting their efforts and helping boost their profiles. All ten Change Leaders (Andrew Ankamah, Jr., Brianna Baker, Dr. Garrick Beauliere, Kemia Bridgewater, Kamarie Brown, Hope Bryant, Nyla Choates, Aaliyah Duah, Dorian Hollingsworth, Jr. &amp; Aaliyah Alicia Thompson) will join the AfroTech stage in two engaging and thought-provoking panel conversations about their personal missions to make positive change in their communities. Because when you have the courage to Start Something, you can Change Everything.",
+      "date": "2023-11-03",
+      "time": "12:20pm - 1:05pm CST",
+      "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/BPG_ChangeLeaders_Logo_Hrz.png",
+      "location": "Republic Square Park",
+      "access": [
+        "General Admission",
+        "All Access",
+        "Corporate",
+        "Executive",
+        "Students"
+      ]
+    },
+    "backgroundColor": "#4CAF50"
+  },
+  {
     "id": "2561601",
     "title": "Inclusivity at the Forefront of Design",
     "start": "2023-11-03T14:15:00",
@@ -2508,11 +2630,11 @@
       "time": "2:15pm - 2:45pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2561,11 +2683,11 @@
       "time": "12:20pm - 12:40pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2582,11 +2704,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/apple.png",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2602,11 +2724,11 @@
       "time": "12:00pm - 12:20pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2639,11 +2761,11 @@
       "time": "10:45am - 11:30am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2710,11 +2832,11 @@
       "time": "11:15am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2731,11 +2853,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2751,11 +2873,24 @@
       "time": "9:30am - 10:15am CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
+  },
+  {
+    "id": "2586677",
+    "title": "Figma x AfroTech 2023 | Official Sponsor Event",
+    "start": "2023-11-02T17:00:00",
+    "end": "2023-11-02T21:00:00",
+    "extendedProps": {
+      "description": "As a proud sponsor of AfroTech 2023, Figma is excited to host a happy hour and networking event for the AfroTech community. Come hang on Thursday, November 2 from 5pm-8pm and grab drinks, bites, and more. Come solo or with your friends—we can’t wait to see you there!  #FigmaAfroTech2023",
+      "date": "2023-11-02",
+      "time": "5:00pm - 9:00pm CST",
+      "link": "https://figmaxafrotech2023.splashthat.com/",
+      "location": "Anthem; 91 Rainey Street Suite 120 Austin, TX 78701"
+    }
   },
   {
     "id": "2561580",
@@ -2768,11 +2903,11 @@
       "time": "3:00pm - 3:45pm CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2783,13 +2918,13 @@
     "start": "2023-11-03T14:45:00",
     "end": "2023-11-03T15:30:00",
     "extendedProps": {
-      "description": "Explore VC strategies beyond funding in this enlightening session moderated by Dujon Smith, Global Co-Lead of the Black Founders Development Program at Accenture. Our experts, Chad Harris, Investor of the SoftBank Opportunity Fund, and Kofi Ampadu, Partner for Talent and Opportunity at Andreessen Horowitz, will delve into innovative approaches and share how to support businesses with mentorship, market insights, and networks, thus reshaping the investment landscape.Access to the Executive Stage requires an Executive or All Access Badge. Secure or upgrade your ticket today!Kofi AmpaduPartner, Talent x Opportunity - Andreessen HorowitzDujon SmithGlobal Co-Lead Black Founders Development Program - AccentureChad HarrisPartner - The Open Opportunity Fund",
+      "description": "Explore VC strategies beyond funding in this enlightening session moderated by Dujon Smith, Global Co-Lead of the Black Founders Development Program at Accenture. Our experts, Chad Harris, Partner of the Open Opportunity Fund, and Kofi Ampadu, Partner for Talent and Opportunity at Andreessen Horowitz, will delve into innovative approaches and share how to support businesses with mentorship, market insights, and networks, thus reshaping the investment landscape.Access to the Executive Stage requires an Executive or All Access Badge. Secure or upgrade your ticket today!Kofi AmpaduPartner, Talent x Opportunity - Andreessen HorowitzDujon SmithGlobal Co-Lead Black Founders Development Program - AccentureChad HarrisPartner - The Open Opportunity Fund",
       "date": "2023-11-03",
       "time": "2:45pm - 3:30pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2806,11 +2941,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/logo-Discover-2.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2826,11 +2961,11 @@
       "time": "12:30pm - 1:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2846,11 +2981,11 @@
       "time": "9:00am - 12:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -2882,8 +3017,8 @@
       "time": "3:00pm - 3:45pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2929,9 +3064,9 @@
       "time": "9:30am - 10:00am CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -2964,8 +3099,8 @@
       "time": "3:00pm - 5:00pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Students",
-        "All Access"
+        "All Access",
+        "Students"
       ]
     },
     "backgroundColor": "orange"
@@ -2991,12 +3126,12 @@
   {
     "id": "2561670",
     "title": "The RNB Experience Part II: Ginuwine Concert AFROTECH 2023  | Official Entertainment Partner",
-    "start": "2023-11-03T18:00:00",
+    "start": "2023-11-03T19:00:00",
     "end": "2023-11-03T22:00:00",
     "extendedProps": {
       "description": "Blavity House Party is bringing the sing-a-long RNB vibes BACK to AFROTECH 2023 in Austin, TX. We have huge surprises planned as we restore the feeling for a 1,000 person max capacity crowd of AFROTECH attendees including a live full band performance by RNB legend Ginuwine!\n\nThis will be one of those nights!! Early arrival is highly suggested and we will get everyone in as quick as possible. Capacity for Part II is half the size of last year so we advise everyone to purchase their ticket asap!",
       "date": "2023-11-03",
-      "time": "6:00pm - 10:00pm CST",
+      "time": "7:00pm - 10:00pm CST",
       "link": "https://www.eventbrite.com/e/the-rnb-experience-part-ii-ginuwine-concert-afrotech-2023-tickets-715608503297?aff=oddtdtcreator",
       "location": "The Courtyard ATX Live Music Venue",
       "access": [
@@ -3016,11 +3151,11 @@
       "time": "3:00pm - 3:30pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3054,11 +3189,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/10/kweliTV_logo.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3072,7 +3207,7 @@
       "description": "Join us for an AFROTECH Farewell Brunch and be apart of our Hip Hop trivia themed gameshow with a chance to win up to $500!\n\nLet&#x27;s celebrate 50th Years of Hip Hop! Come dressed in outfits inspired by the Hip Hop culture, freshen up on your Hip Hop knowledge and get ready to sing along to all of your favorite songs.\n\nHosted by Trivia For Us founders, Deydra Bringas and Shakira Hodges. Enjoy a day of partying with a live DJ, networking, eating delicious foods and libations.\n\nDate: Sunday, November 5th, 2023\n\nTime: 12PM- 4PM, Trivia game starts promptly at 1PM\n\nLocation: Green Light Social | 720 West 6th Street, Austin, TX, 78701\n\nParticipants can play trivia on their mobile devices and answer questions about black history, black pop culture, music, film, TV, art and science.\n\nSo, if you ever wanted to be on a game show, here&#x27;s your chance!\n\nGrab your squad and join us for some Trivia For Us fun and a chance to win up to $500!",
       "date": "2023-11-05",
       "time": "12:00pm - 4:00pm CST",
-      "link": "https://www.eventbrite.com/e/afrotech-x-trivia-for-us-hip-hop-game-show-brunch-n-play-tickets-714722573457?aff=oddtdtcreator",
+      "link": "https://eventnoire.com/events/afrotech-x-trivia-for-us-hip-hop-game-show-brunch",
       "location": "Green Light Social",
       "access": [
         "RSVP Required"
@@ -3086,16 +3221,16 @@
     "start": "2023-11-02T09:00:00",
     "end": "2023-11-02T09:30:00",
     "extendedProps": {
-      "description": "Don&#x27;t miss this session featuring Will Packer, Founder and CEO of Will Packer Productions. With a track record of producing billion-dollar movies and leading Will Packer Media, Packer is a true industry luminary. In this session, he&#x27;ll reveal the secrets behind building a long-lasting media empire, creating compelling content, and his remarkable experiences, such as producing the Academy Awards. Learn how he combines his media success with community leadership, supporting HBCUs, and embodying excellence. This session is your opportunity to be inspired and discover the keys to success in the world of media and entertainment, leaving your own legacy.Will PackerCEO and Founder - Will Packer Productions and Will Packer Media",
+      "description": "Don&#x27;t miss this session featuring Will Packer, Founder and CEO of Will Packer Productions. With a track record of producing billion-dollar movies and leading Will Packer Media, Packer is a true industry luminary. In this session, he&#x27;ll reveal the secrets behind building a long-lasting media empire, creating compelling content, and his remarkable experiences, such as producing the Academy Awards. Learn how he combines his media success with community leadership, supporting HBCUs, and embodying excellence. This session is your opportunity to be inspired and discover the keys to success in the world of media and entertainment, leaving your own legacy.Will PackerCEO and Founder - Will Packer Productions and Will Packer MediaDr. Nicole CrossMultiple Emmy Award-winning News Anchor/National Mental Health Correspondent/Psychotherapist/Public Speaker -",
       "date": "2023-11-02",
       "time": "9:00am - 9:30am CST",
       "location": "ACL Live at Moody Theater",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3111,11 +3246,11 @@
       "time": "12:00pm - 12:20pm CST",
       "location": "Republic Square Park",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3162,11 +3297,11 @@
       "time": "3:30pm - 4:30pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3216,9 +3351,9 @@
       "time": "11:30am - 12:15pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3269,9 +3404,9 @@
       "time": "1:00pm - 1:45pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3304,11 +3439,31 @@
       "time": "2:00pm - 2:30pm CST",
       "location": "Fairmont Austin",
       "access": [
-        "Executive",
-        "All Access"
+        "All Access",
+        "Executive"
       ]
     },
     "backgroundColor": "#FFD700"
+  },
+  {
+    "id": "2561008",
+    "title": "Music in the Age of AI: We Are The Training Data",
+    "start": "2023-11-02T11:00:00",
+    "end": "2023-11-02T12:00:00",
+    "extendedProps": {
+      "description": "Daouda Leonard and Nait Jones discuss the value of our creative energy, in the age of AI. Are the machines being optimized for us, or are we being optimized for the machines? This conversation will focus on the rapidly changing environment in the music industry and the emergent set of tools, considerations, and implications for artists in the context of AI.Daouda LeonardFounder &amp; Chief Executive Officer - CreateSafeNait JonesFounder - Oyi Labs",
+      "date": "2023-11-02",
+      "time": "11:00am - 12:00pm CST",
+      "location": "Austin Convention Center",
+      "access": [
+        "General Admission",
+        "All Access",
+        "Corporate",
+        "Executive",
+        "Students"
+      ]
+    },
+    "backgroundColor": "#4CAF50"
   },
   {
     "id": "2561328",
@@ -3322,11 +3477,11 @@
       "image": "https://experience.afrotech.com/wp-content/uploads/2023/09/Microsoft-logo_cmyk_c-gray-copy.svg",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
@@ -3342,9 +3497,9 @@
       "time": "3:00pm - 3:45pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3388,9 +3543,9 @@
       "time": "2:30pm - 3:00pm CST",
       "location": "Hilton Austin",
       "access": [
+        "All Access",
         "Executive",
-        "Corporate",
-        "All Access"
+        "Corporate"
       ]
     },
     "backgroundColor": "#FFD700"
@@ -3406,11 +3561,11 @@
       "time": "3:30pm - 4:30pm CST",
       "location": "Austin Convention Center",
       "access": [
-        "Executive",
+        "General Admission",
         "All Access",
-        "Students",
         "Corporate",
-        "General Admission"
+        "Executive",
+        "Students"
       ]
     },
     "backgroundColor": "#4CAF50"
